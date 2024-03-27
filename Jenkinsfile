@@ -25,8 +25,9 @@ pipeline {
             steps {
                 script {
                     sh '''git add -f products.csv
-                          git commit -m "Updating products.csv"
-                          git push origin HEAD:new-recover-branch
+                          git add -f app.log
+                          git commit -m "Updating products.csv and app.log"
+                          git push origin HEAD:master
                        '''
                 }
             }
