@@ -46,7 +46,7 @@ pip install -r requirements.txt
 Run the script using Python from your terminal:
 
 ```bash
-python tracker.py
+python3 tracker.py
 ```
 
 The script expects a CSV file named `products.csv` in the same directory, containing the following columns:
