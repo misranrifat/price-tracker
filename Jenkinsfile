@@ -27,7 +27,7 @@ pipeline {
                     sh '''git add -f products.csv
                           git add -f app.log
                           git commit -m "Updating products.csv and app.log"
-                          git push origin HEAD:master
+                          git push origin HEAD:main
                        '''
                 }
             }
