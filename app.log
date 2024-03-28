@@ -1,40 +1,59 @@
-2024-03-27 23:50:05,486 - INFO - Launching chrome-headless-shell browser
-2024-03-27 23:50:05,486 - INFO - Browser version: 123.0.6312.86
+2024-03-27 23:55:05,161 - INFO - Launching chrome-headless-shell browser
+2024-03-27 23:55:05,161 - INFO - Browser version: 123.0.6312.86
 
-2024-03-27 23:50:06,690 - INFO - RIDGID 12 Gallon 5.0 Peak HP NXT Wet/Dry Shop Vacuum with Filter, Locking Hose and Accessories HD1200 - The Home Depot
-2024-03-27 23:50:07,249 - INFO - Current_price 79.0
-2024-03-27 23:50:07,249 - INFO - Updated last_checked
-2024-03-27 23:50:07,249 - INFO - Updated status
+2024-03-27 23:55:07,156 - INFO - RIDGID 12 Gallon 5.0 Peak HP NXT Wet/Dry Shop Vacuum with Filter, Locking Hose and Accessories HD1200 - The Home Depot
+2024-03-27 23:55:08,293 - INFO - Current_price 79.0
+2024-03-27 23:55:08,293 - INFO - Updated last_checked
+2024-03-27 23:55:08,293 - INFO - Updated status
 
-2024-03-27 23:50:07,759 - INFO - Husky 47 in. L Wood Handle Carbon Steel Digging Shovel with Grip 77416-945 - The Home Depot
-2024-03-27 23:50:08,365 - INFO - Current_price 19.0
-2024-03-27 23:50:08,366 - INFO - Updated last_checked
-2024-03-27 23:50:08,366 - INFO - Updated status
+2024-03-27 23:55:10,696 - INFO - Husky 47 in. L Wood Handle Carbon Steel Digging Shovel with Grip 77416-945 - The Home Depot
+2024-03-27 23:55:11,303 - INFO - Current_price 19.0
+2024-03-27 23:55:11,303 - INFO - Updated last_checked
+2024-03-27 23:55:11,303 - INFO - Updated status
 
-2024-03-27 23:50:12,582 - INFO - Amazon.com: SanDisk 2TB Extreme Portable SSD - Up to 1050MB/s, USB-C, USB 3.2 Gen 2, IP65 Water and Dust Resistance, Updated Firmware - External Solid State Drive - SDSSDE61-2T00-G25 : Electronics
-2024-03-27 23:50:12,611 - INFO - Current_price 159.0
-2024-03-27 23:50:12,611 - INFO - Updated last_checked
-2024-03-27 23:50:12,611 - INFO - Updated status
+2024-03-27 23:55:12,473 - INFO - Amazon.com: SanDisk 2TB Extreme Portable SSD - Up to 1050MB/s, USB-C, USB 3.2 Gen 2, IP65 Water and Dust Resistance, Updated Firmware - External Solid State Drive - SDSSDE61-2T00-G25 : Electronics
+2024-03-27 23:55:47,994 - ERROR - Error processing https://www.amazon.com/SanDisk-2TB-Extreme-Portable-SDSSDE61-2T00-G25/dp/B08HN37XC1/ref=pd_ci_mcx_mh_mcx_views_0?pd_rd_w=8XSIK&content-id=amzn1.sym.225b4624-972d-4629-9040-f1bf9923dd95%3Aamzn1.symc.40e6a10e-cbc4-4fa5-81e3-4435ff64d03b&pf_rd_p=225b4624-972d-4629-9040-f1bf9923dd95&pf_rd_r=A2E91CEKYBA5YR4RS2MN&pd_rd_wg=RX7jS&pd_rd_r=02ec48a2-e941-4f74-b3b4-126b6e94fa91&pd_rd_i=B08HN37XC1: Message: 
+Stacktrace:
+0   chromedriver                        0x000000010060441c chromedriver + 4326428
+1   chromedriver                        0x00000001005fc8e4 chromedriver + 4294884
+2   chromedriver                        0x0000000100228088 chromedriver + 278664
+3   chromedriver                        0x000000010026aa80 chromedriver + 551552
+4   chromedriver                        0x00000001002a34f8 chromedriver + 783608
+5   chromedriver                        0x000000010025f4e4 chromedriver + 505060
+6   chromedriver                        0x000000010025ff5c chromedriver + 507740
+7   chromedriver                        0x00000001005c79b8 chromedriver + 4078008
+8   chromedriver                        0x00000001005cc770 chromedriver + 4097904
+9   chromedriver                        0x00000001005ae55c chromedriver + 3974492
+10  chromedriver                        0x00000001005cd088 chromedriver + 4100232
+11  chromedriver                        0x000000010059fb4c chromedriver + 3914572
+12  chromedriver                        0x00000001005ed690 chromedriver + 4232848
+13  chromedriver                        0x00000001005ed80c chromedriver + 4233228
+14  chromedriver                        0x00000001005fc558 chromedriver + 4293976
+15  libsystem_pthread.dylib             0x000000019198ef94 _pthread_start + 136
+16  libsystem_pthread.dylib             0x0000000191989d34 thread_start + 8
 
-2024-03-27 23:50:14,965 - INFO - Amazon.com: Apple 2023 Mac Mini Desktop Computer M2 chip with 8‑core CPU and 10‑core GPU, 8GB Unified Memory, 256GB SSD Storage, Gigabit Ethernet. Works with iPhone/iPad : Electronics
-2024-03-27 23:50:14,980 - INFO - Current_price 499.0
-2024-03-27 23:50:14,980 - INFO - Updated last_checked
-2024-03-27 23:50:14,980 - INFO - Updated status
+2024-03-27 23:55:47,995 - ERROR - Updated last_checked
+2024-03-27 23:55:47,995 - ERROR - Updated status
 
-2024-03-27 23:50:18,338 - INFO - Amazon.com: 12pcs Pots and Pans Set Non Stick Kitchen Cookware Sets Induction Cookware Nonstick Granite Cooking Set with Frying Pans, Saucepans, Steamer Silicone Shovel Spoon & Tongs (Black) : Everything Else
-2024-03-27 23:50:18,353 - INFO - Current_price 109.0
-2024-03-27 23:50:18,353 - INFO - Updated last_checked
-2024-03-27 23:50:18,353 - INFO - Updated status
+2024-03-27 23:55:50,476 - INFO - Amazon.com: Apple 2023 Mac Mini Desktop Computer M2 chip with 8‑core CPU and 10‑core GPU, 8GB Unified Memory, 256GB SSD Storage, Gigabit Ethernet. Works with iPhone/iPad : Electronics
+2024-03-27 23:55:50,506 - INFO - Current_price 499.0
+2024-03-27 23:55:50,506 - INFO - Updated last_checked
+2024-03-27 23:55:50,506 - INFO - Updated status
 
-2024-03-27 23:50:20,956 - INFO - Apple iPhone 14 Pro Max 1TB ( Unlocked) US E Sim - Excellent | eBay
-2024-03-27 23:50:20,973 - INFO - Current_price 939.99
-2024-03-27 23:50:20,973 - INFO - Updated last_checked
-2024-03-27 23:50:20,973 - INFO - Updated status
+2024-03-27 23:55:53,927 - INFO - Amazon.com: 12pcs Pots and Pans Set Non Stick Kitchen Cookware Sets Induction Cookware Nonstick Granite Cooking Set with Frying Pans, Saucepans, Steamer Silicone Shovel Spoon & Tongs (Black) : Everything Else
+2024-03-27 23:55:53,949 - INFO - Current_price 109.0
+2024-03-27 23:55:53,949 - INFO - Updated last_checked
+2024-03-27 23:55:53,949 - INFO - Updated status
 
-2024-03-27 23:50:23,334 - INFO - Amazon.com: MSI Cubi N ADL Mini PC, Intel N100 Processor (Beats Intel i3-10100), 32GB RAM, 1TB SSD, Wi-Fi 5, Support 4K UHD Dual Display, HDMI, Gigabit Ethernet for Home/Office/Gaming, Windows 11 Pro, Black : Electronics
-2024-03-27 23:50:23,367 - INFO - Current_price 369.0
-2024-03-27 23:50:23,367 - INFO - Updated last_checked
-2024-03-27 23:50:23,367 - INFO - Updated status
+2024-03-27 23:55:55,558 - INFO - Apple iPhone 14 Pro Max 1TB ( Unlocked) US E Sim - Excellent | eBay
+2024-03-27 23:55:55,589 - INFO - Current_price 939.99
+2024-03-27 23:55:55,589 - INFO - Updated last_checked
+2024-03-27 23:55:55,590 - INFO - Updated status
 
-2024-03-27 23:50:23,682 - INFO - Browser closed
-2024-03-27 23:50:23,684 - INFO - CSV file has been updated with current prices.
+2024-03-27 23:55:58,517 - INFO - Amazon.com: MSI Cubi N ADL Mini PC, Intel N100 Processor (Beats Intel i3-10100), 32GB RAM, 1TB SSD, Wi-Fi 5, Support 4K UHD Dual Display, HDMI, Gigabit Ethernet for Home/Office/Gaming, Windows 11 Pro, Black : Electronics
+2024-03-27 23:55:58,558 - INFO - Current_price 369.0
+2024-03-27 23:55:58,558 - INFO - Updated last_checked
+2024-03-27 23:55:58,558 - INFO - Updated status
+
+2024-03-27 23:55:58,721 - INFO - Browser closed
+2024-03-27 23:55:58,722 - INFO - CSV file has been updated with current prices.
