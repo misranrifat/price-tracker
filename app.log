@@ -1,40 +1,78 @@
-2024-03-28 19:45:05,833 - INFO - Launching chrome-headless-shell browser
-2024-03-28 19:45:05,835 - INFO - Browser version: 123.0.6312.86
+2024-03-28 19:50:06,016 - INFO - Launching chrome-headless-shell browser
+2024-03-28 19:50:06,018 - INFO - Browser version: 123.0.6312.86
 
-2024-03-28 19:45:07,293 - INFO - RIDGID 12 Gallon 5.0 Peak HP NXT Wet/Dry Shop Vacuum with Filter, Locking Hose and Accessories HD1200 - The Home Depot
-2024-03-28 19:45:07,853 - INFO - Current_price 79.0
-2024-03-28 19:45:07,853 - INFO - Updated last_checked
-2024-03-28 19:45:07,854 - INFO - Updated status
+2024-03-28 19:50:07,314 - INFO - RIDGID 12 Gallon 5.0 Peak HP NXT Wet/Dry Shop Vacuum with Filter, Locking Hose and Accessories HD1200 - The Home Depot
+2024-03-28 19:50:42,440 - ERROR - Error processing https://www.homedepot.com/p/RIDGID-12-Gallon-5-0-Peak-HP-NXT-Wet-Dry-Shop-Vacuum-with-Filter-Locking-Hose-and-Accessories-HD1200/304006023: Message: 
+Stacktrace:
+0   chromedriver                        0x000000010248041c chromedriver + 4326428
+1   chromedriver                        0x00000001024788e4 chromedriver + 4294884
+2   chromedriver                        0x00000001020a4088 chromedriver + 278664
+3   chromedriver                        0x00000001020e6a80 chromedriver + 551552
+4   chromedriver                        0x000000010211f4f8 chromedriver + 783608
+5   chromedriver                        0x00000001020db4e4 chromedriver + 505060
+6   chromedriver                        0x00000001020dbf5c chromedriver + 507740
+7   chromedriver                        0x00000001024439b8 chromedriver + 4078008
+8   chromedriver                        0x0000000102448770 chromedriver + 4097904
+9   chromedriver                        0x000000010242a55c chromedriver + 3974492
+10  chromedriver                        0x0000000102449088 chromedriver + 4100232
+11  chromedriver                        0x000000010241bb4c chromedriver + 3914572
+12  chromedriver                        0x0000000102469690 chromedriver + 4232848
+13  chromedriver                        0x000000010246980c chromedriver + 4233228
+14  chromedriver                        0x0000000102478558 chromedriver + 4293976
+15  libsystem_pthread.dylib             0x000000019198ef94 _pthread_start + 136
+16  libsystem_pthread.dylib             0x0000000191989d34 thread_start + 8
 
-2024-03-28 19:45:09,163 - INFO - Husky 47 in. L Wood Handle Carbon Steel Digging Shovel with Grip 77416-945 - The Home Depot
-2024-03-28 19:45:09,887 - INFO - Current_price 19.0
-2024-03-28 19:45:09,887 - INFO - Updated last_checked
-2024-03-28 19:45:09,887 - INFO - Updated status
+2024-03-28 19:50:42,442 - ERROR - Updated last_checked
+2024-03-28 19:50:42,442 - ERROR - Updated status
 
-2024-03-28 19:45:14,582 - INFO - Amazon.com: SanDisk 2TB Extreme Portable SSD - Up to 1050MB/s, USB-C, USB 3.2 Gen 2, IP65 Water and Dust Resistance, Updated Firmware - External Solid State Drive - SDSSDE61-2T00-G25 : Electronics
-2024-03-28 19:45:14,602 - INFO - Current_price 159.0
-2024-03-28 19:45:14,602 - INFO - Updated last_checked
-2024-03-28 19:45:14,602 - INFO - Updated status
+2024-03-28 19:50:43,110 - INFO - 
+2024-03-28 19:51:18,623 - ERROR - Error processing https://www.homedepot.com/p/Husky-47-in-L-Wood-Handle-Carbon-Steel-Digging-Shovel-with-Grip-77416-945/315067859: Message: 
+Stacktrace:
+0   chromedriver                        0x000000010248041c chromedriver + 4326428
+1   chromedriver                        0x00000001024788e4 chromedriver + 4294884
+2   chromedriver                        0x00000001020a4088 chromedriver + 278664
+3   chromedriver                        0x00000001020e6a80 chromedriver + 551552
+4   chromedriver                        0x000000010211f4f8 chromedriver + 783608
+5   chromedriver                        0x00000001020db4e4 chromedriver + 505060
+6   chromedriver                        0x00000001020dbf5c chromedriver + 507740
+7   chromedriver                        0x00000001024439b8 chromedriver + 4078008
+8   chromedriver                        0x0000000102448770 chromedriver + 4097904
+9   chromedriver                        0x000000010242a55c chromedriver + 3974492
+10  chromedriver                        0x0000000102449088 chromedriver + 4100232
+11  chromedriver                        0x000000010241bb4c chromedriver + 3914572
+12  chromedriver                        0x0000000102469690 chromedriver + 4232848
+13  chromedriver                        0x000000010246980c chromedriver + 4233228
+14  chromedriver                        0x0000000102478558 chromedriver + 4293976
+15  libsystem_pthread.dylib             0x000000019198ef94 _pthread_start + 136
+16  libsystem_pthread.dylib             0x0000000191989d34 thread_start + 8
 
-2024-03-28 19:45:17,163 - INFO - Amazon.com: Apple 2023 Mac Mini Desktop Computer M2 chip with 8‑core CPU and 10‑core GPU, 8GB Unified Memory, 256GB SSD Storage, Gigabit Ethernet. Works with iPhone/iPad : Electronics
-2024-03-28 19:45:17,180 - INFO - Current_price 499.0
-2024-03-28 19:45:17,180 - INFO - Updated last_checked
-2024-03-28 19:45:17,180 - INFO - Updated status
+2024-03-28 19:51:18,624 - ERROR - Updated last_checked
+2024-03-28 19:51:18,624 - ERROR - Updated status
 
-2024-03-28 19:45:21,422 - INFO - Amazon.com: 12pcs Pots and Pans Set Non Stick Kitchen Cookware Sets Induction Cookware Nonstick Granite Cooking Set with Frying Pans, Saucepans, Steamer Silicone Shovel Spoon & Tongs (Black) : Everything Else
-2024-03-28 19:45:21,445 - INFO - Current_price 109.0
-2024-03-28 19:45:21,445 - INFO - Updated last_checked
-2024-03-28 19:45:21,445 - INFO - Updated status
+2024-03-28 19:51:22,657 - INFO - Amazon.com: SanDisk 2TB Extreme Portable SSD - Up to 1050MB/s, USB-C, USB 3.2 Gen 2, IP65 Water and Dust Resistance, Updated Firmware - External Solid State Drive - SDSSDE61-2T00-G25 : Electronics
+2024-03-28 19:51:22,682 - INFO - Current_price 159.0
+2024-03-28 19:51:22,682 - INFO - Updated last_checked
+2024-03-28 19:51:22,682 - INFO - Updated status
 
-2024-03-28 19:45:23,906 - INFO - Apple iPhone 14 Pro Max 1TB ( Unlocked) US E Sim - Excellent | eBay
-2024-03-28 19:45:23,929 - INFO - Current_price 939.99
-2024-03-28 19:45:23,929 - INFO - Updated last_checked
-2024-03-28 19:45:23,929 - INFO - Updated status
+2024-03-28 19:51:24,830 - INFO - Amazon.com: Apple 2023 Mac Mini Desktop Computer M2 chip with 8‑core CPU and 10‑core GPU, 8GB Unified Memory, 256GB SSD Storage, Gigabit Ethernet. Works with iPhone/iPad : Electronics
+2024-03-28 19:51:24,848 - INFO - Current_price 499.0
+2024-03-28 19:51:24,849 - INFO - Updated last_checked
+2024-03-28 19:51:24,849 - INFO - Updated status
 
-2024-03-28 19:45:26,462 - INFO - Amazon.com: MSI Cubi N ADL Mini PC, Intel N100 Processor (Beats Intel i3-10100), 32GB RAM, 1TB SSD, Wi-Fi 5, Support 4K UHD Dual Display, HDMI, Gigabit Ethernet for Home/Office/Gaming, Windows 11 Pro, Black : Electronics
-2024-03-28 19:45:26,480 - INFO - Current_price 369.0
-2024-03-28 19:45:26,480 - INFO - Updated last_checked
-2024-03-28 19:45:26,480 - INFO - Updated status
+2024-03-28 19:51:27,999 - INFO - Amazon.com: 12pcs Pots and Pans Set Non Stick Kitchen Cookware Sets Induction Cookware Nonstick Granite Cooking Set with Frying Pans, Saucepans, Steamer Silicone Shovel Spoon & Tongs (Black) : Everything Else
+2024-03-28 19:51:28,013 - INFO - Current_price 109.0
+2024-03-28 19:51:28,014 - INFO - Updated last_checked
+2024-03-28 19:51:28,014 - INFO - Updated status
 
-2024-03-28 19:45:26,706 - INFO - Browser closed
-2024-03-28 19:45:26,708 - INFO - CSV file has been updated with current prices.
+2024-03-28 19:51:30,771 - INFO - Apple iPhone 14 Pro Max 1TB ( Unlocked) US E Sim - Excellent | eBay
+2024-03-28 19:51:30,838 - INFO - Current_price 939.99
+2024-03-28 19:51:30,838 - INFO - Updated last_checked
+2024-03-28 19:51:30,838 - INFO - Updated status
+
+2024-03-28 19:51:33,096 - INFO - Amazon.com: MSI Cubi N ADL Mini PC, Intel N100 Processor (Beats Intel i3-10100), 32GB RAM, 1TB SSD, Wi-Fi 5, Support 4K UHD Dual Display, HDMI, Gigabit Ethernet for Home/Office/Gaming, Windows 11 Pro, Black : Electronics
+2024-03-28 19:51:33,123 - INFO - Current_price 369.0
+2024-03-28 19:51:33,123 - INFO - Updated last_checked
+2024-03-28 19:51:33,123 - INFO - Updated status
+
+2024-03-28 19:51:33,442 - INFO - Browser closed
+2024-03-28 19:51:33,445 - INFO - CSV file has been updated with current prices.
