@@ -1,59 +1,97 @@
-2024-03-29 18:15:05,136 - INFO - Launching chrome-headless-shell browser
-2024-03-29 18:15:05,136 - INFO - Browser version: 123.0.6312.87
+2024-03-29 18:20:06,072 - INFO - Launching chrome-headless-shell browser
+2024-03-29 18:20:06,073 - INFO - Browser version: 123.0.6312.87
 
-2024-03-29 18:15:06,704 - INFO - RIDGID 12 Gallon 5.0 Peak HP NXT Wet/Dry Shop Vacuum with Filter, Locking Hose and Accessories HD1200 - The Home Depot
-2024-03-29 18:15:07,310 - INFO - Current_price 79.0
-2024-03-29 18:15:07,310 - INFO - Updated last_checked
-2024-03-29 18:15:07,310 - INFO - Updated status
-
-2024-03-29 18:15:07,874 - INFO - Husky 47 in. L Wood Handle Carbon Steel Digging Shovel with Grip 77416-945 - The Home Depot
-2024-03-29 18:15:08,414 - INFO - Current_price 19.0
-2024-03-29 18:15:08,414 - INFO - Updated last_checked
-2024-03-29 18:15:08,414 - INFO - Updated status
-
-2024-03-29 18:15:12,368 - INFO - Amazon.com: SanDisk 2TB Extreme Portable SSD - Up to 1050MB/s, USB-C, USB 3.2 Gen 2, IP65 Water and Dust Resistance, Updated Firmware - External Solid State Drive - SDSSDE61-2T00-G25 : Electronics
-2024-03-29 18:15:12,391 - INFO - Current_price 159.0
-2024-03-29 18:15:12,391 - INFO - Updated last_checked
-2024-03-29 18:15:12,391 - INFO - Updated status
-
-2024-03-29 18:15:14,732 - INFO - Amazon.com: Apple 2023 Mac Mini Desktop Computer M2 chip with 8‑core CPU and 10‑core GPU, 8GB Unified Memory, 256GB SSD Storage, Gigabit Ethernet. Works with iPhone/iPad : Electronics
-2024-03-29 18:15:49,888 - ERROR - Error processing https://www.amazon.com/gp/aw/d/B0BSHGHGXR/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=d8051ce6eb1bced7ec517ba7291722d2&hsa_cr_id=4867932200401&qid=1711541912&sr=1-1-9e67e56a-6f64-441f-a281-df67fc737124&ref_=sbx_be_s_sparkle_lsi4d_asin_0_img&pd_rd_w=pasrw&content-id=amzn1.sym.417820b0-80f2-4084-adb3-fb612550f30b%3Aamzn1.sym.417820b0-80f2-4084-adb3-fb612550f30b&pf_rd_p=417820b0-80f2-4084-adb3-fb612550f30b&pf_rd_r=ZAP6G2YRQ6R8Q8M3WH21&pd_rd_wg=V9MvD&pd_rd_r=4cdf0799-c3c5-42f0-b61a-325e2899441c: Message: 
+2024-03-29 18:20:07,174 - INFO - RIDGID 12 Gallon 5.0 Peak HP NXT Wet/Dry Shop Vacuum with Filter, Locking Hose and Accessories HD1200 - The Home Depot
+2024-03-29 18:20:42,501 - ERROR - Error processing https://www.homedepot.com/p/RIDGID-12-Gallon-5-0-Peak-HP-NXT-Wet-Dry-Shop-Vacuum-with-Filter-Locking-Hose-and-Accessories-HD1200/304006023: Message: 
 Stacktrace:
-0   chromedriver                        0x0000000104ac041c chromedriver + 4326428
-1   chromedriver                        0x0000000104ab88e4 chromedriver + 4294884
-2   chromedriver                        0x00000001046e4088 chromedriver + 278664
-3   chromedriver                        0x0000000104726a80 chromedriver + 551552
-4   chromedriver                        0x000000010475f4f8 chromedriver + 783608
-5   chromedriver                        0x000000010471b4e4 chromedriver + 505060
-6   chromedriver                        0x000000010471bf5c chromedriver + 507740
-7   chromedriver                        0x0000000104a839b8 chromedriver + 4078008
-8   chromedriver                        0x0000000104a88770 chromedriver + 4097904
-9   chromedriver                        0x0000000104a6a55c chromedriver + 3974492
-10  chromedriver                        0x0000000104a89088 chromedriver + 4100232
-11  chromedriver                        0x0000000104a5bb4c chromedriver + 3914572
-12  chromedriver                        0x0000000104aa9690 chromedriver + 4232848
-13  chromedriver                        0x0000000104aa980c chromedriver + 4233228
-14  chromedriver                        0x0000000104ab8558 chromedriver + 4293976
+0   chromedriver                        0x000000010295441c chromedriver + 4326428
+1   chromedriver                        0x000000010294c8e4 chromedriver + 4294884
+2   chromedriver                        0x0000000102578088 chromedriver + 278664
+3   chromedriver                        0x00000001025baa80 chromedriver + 551552
+4   chromedriver                        0x00000001025f34f8 chromedriver + 783608
+5   chromedriver                        0x00000001025af4e4 chromedriver + 505060
+6   chromedriver                        0x00000001025aff5c chromedriver + 507740
+7   chromedriver                        0x00000001029179b8 chromedriver + 4078008
+8   chromedriver                        0x000000010291c770 chromedriver + 4097904
+9   chromedriver                        0x00000001028fe55c chromedriver + 3974492
+10  chromedriver                        0x000000010291d088 chromedriver + 4100232
+11  chromedriver                        0x00000001028efb4c chromedriver + 3914572
+12  chromedriver                        0x000000010293d690 chromedriver + 4232848
+13  chromedriver                        0x000000010293d80c chromedriver + 4233228
+14  chromedriver                        0x000000010294c558 chromedriver + 4293976
 15  libsystem_pthread.dylib             0x000000019198ef94 _pthread_start + 136
 16  libsystem_pthread.dylib             0x0000000191989d34 thread_start + 8
 
-2024-03-29 18:15:49,890 - ERROR - Updated last_checked
-2024-03-29 18:15:49,890 - ERROR - Updated status
+2024-03-29 18:20:42,502 - ERROR - Updated last_checked
+2024-03-29 18:20:42,502 - ERROR - Updated status
 
-2024-03-29 18:15:53,652 - INFO - Amazon.com: 12pcs Pots and Pans Set Non Stick Kitchen Cookware Sets Induction Cookware Nonstick Granite Cooking Set with Frying Pans, Saucepans, Steamer Silicone Shovel Spoon & Tongs (Black) : Everything Else
-2024-03-29 18:15:53,683 - INFO - Current_price 109.0
-2024-03-29 18:15:53,683 - INFO - Updated last_checked
-2024-03-29 18:15:53,683 - INFO - Updated status
+2024-03-29 18:20:43,125 - INFO - Husky 47 in. L Wood Handle Carbon Steel Digging Shovel with Grip 77416-945 - The Home Depot
+2024-03-29 18:21:18,492 - ERROR - Error processing https://www.homedepot.com/p/Husky-47-in-L-Wood-Handle-Carbon-Steel-Digging-Shovel-with-Grip-77416-945/315067859: Message: 
+Stacktrace:
+0   chromedriver                        0x000000010295441c chromedriver + 4326428
+1   chromedriver                        0x000000010294c8e4 chromedriver + 4294884
+2   chromedriver                        0x0000000102578088 chromedriver + 278664
+3   chromedriver                        0x00000001025baa80 chromedriver + 551552
+4   chromedriver                        0x00000001025f34f8 chromedriver + 783608
+5   chromedriver                        0x00000001025af4e4 chromedriver + 505060
+6   chromedriver                        0x00000001025aff5c chromedriver + 507740
+7   chromedriver                        0x00000001029179b8 chromedriver + 4078008
+8   chromedriver                        0x000000010291c770 chromedriver + 4097904
+9   chromedriver                        0x00000001028fe55c chromedriver + 3974492
+10  chromedriver                        0x000000010291d088 chromedriver + 4100232
+11  chromedriver                        0x00000001028efb4c chromedriver + 3914572
+12  chromedriver                        0x000000010293d690 chromedriver + 4232848
+13  chromedriver                        0x000000010293d80c chromedriver + 4233228
+14  chromedriver                        0x000000010294c558 chromedriver + 4293976
+15  libsystem_pthread.dylib             0x000000019198ef94 _pthread_start + 136
+16  libsystem_pthread.dylib             0x0000000191989d34 thread_start + 8
 
-2024-03-29 18:15:55,188 - INFO - Apple iPhone 14 Pro Max 1TB ( Unlocked) US E Sim - Excellent | eBay
-2024-03-29 18:15:55,220 - INFO - Current_price 939.99
-2024-03-29 18:15:55,220 - INFO - Updated last_checked
-2024-03-29 18:15:55,220 - INFO - Updated status
+2024-03-29 18:21:18,494 - ERROR - Updated last_checked
+2024-03-29 18:21:18,494 - ERROR - Updated status
 
-2024-03-29 18:15:57,811 - INFO - Amazon.com: MSI Cubi N ADL Mini PC, Intel N100 Processor (Beats Intel i3-10100), 32GB RAM, 1TB SSD, Wi-Fi 5, Support 4K UHD Dual Display, HDMI, Gigabit Ethernet for Home/Office/Gaming, Windows 11 Pro, Black : Electronics
-2024-03-29 18:15:57,863 - INFO - Current_price 369.0
-2024-03-29 18:15:57,864 - INFO - Updated last_checked
-2024-03-29 18:15:57,864 - INFO - Updated status
+2024-03-29 18:21:22,323 - INFO - Amazon.com: SanDisk 2TB Extreme Portable SSD - Up to 1050MB/s, USB-C, USB 3.2 Gen 2, IP65 Water and Dust Resistance, Updated Firmware - External Solid State Drive - SDSSDE61-2T00-G25 : Electronics
+2024-03-29 18:21:22,347 - INFO - Current_price 159.0
+2024-03-29 18:21:22,348 - INFO - Updated last_checked
+2024-03-29 18:21:22,348 - INFO - Updated status
 
-2024-03-29 18:15:58,038 - INFO - Browser closed
-2024-03-29 18:15:58,039 - INFO - CSV file has been updated with current prices.
+2024-03-29 18:21:24,383 - INFO - Amazon.com: Apple 2023 Mac Mini Desktop Computer M2 chip with 8‑core CPU and 10‑core GPU, 8GB Unified Memory, 256GB SSD Storage, Gigabit Ethernet. Works with iPhone/iPad : Electronics
+2024-03-29 18:22:00,002 - ERROR - Error processing https://www.amazon.com/gp/aw/d/B0BSHGHGXR/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=d8051ce6eb1bced7ec517ba7291722d2&hsa_cr_id=4867932200401&qid=1711541912&sr=1-1-9e67e56a-6f64-441f-a281-df67fc737124&ref_=sbx_be_s_sparkle_lsi4d_asin_0_img&pd_rd_w=pasrw&content-id=amzn1.sym.417820b0-80f2-4084-adb3-fb612550f30b%3Aamzn1.sym.417820b0-80f2-4084-adb3-fb612550f30b&pf_rd_p=417820b0-80f2-4084-adb3-fb612550f30b&pf_rd_r=ZAP6G2YRQ6R8Q8M3WH21&pd_rd_wg=V9MvD&pd_rd_r=4cdf0799-c3c5-42f0-b61a-325e2899441c: Message: 
+Stacktrace:
+0   chromedriver                        0x000000010295441c chromedriver + 4326428
+1   chromedriver                        0x000000010294c8e4 chromedriver + 4294884
+2   chromedriver                        0x0000000102578088 chromedriver + 278664
+3   chromedriver                        0x00000001025baa80 chromedriver + 551552
+4   chromedriver                        0x00000001025f34f8 chromedriver + 783608
+5   chromedriver                        0x00000001025af4e4 chromedriver + 505060
+6   chromedriver                        0x00000001025aff5c chromedriver + 507740
+7   chromedriver                        0x00000001029179b8 chromedriver + 4078008
+8   chromedriver                        0x000000010291c770 chromedriver + 4097904
+9   chromedriver                        0x00000001028fe55c chromedriver + 3974492
+10  chromedriver                        0x000000010291d088 chromedriver + 4100232
+11  chromedriver                        0x00000001028efb4c chromedriver + 3914572
+12  chromedriver                        0x000000010293d690 chromedriver + 4232848
+13  chromedriver                        0x000000010293d80c chromedriver + 4233228
+14  chromedriver                        0x000000010294c558 chromedriver + 4293976
+15  libsystem_pthread.dylib             0x000000019198ef94 _pthread_start + 136
+16  libsystem_pthread.dylib             0x0000000191989d34 thread_start + 8
+
+2024-03-29 18:22:00,002 - ERROR - Updated last_checked
+2024-03-29 18:22:00,003 - ERROR - Updated status
+
+2024-03-29 18:22:03,296 - INFO - Amazon.com: 12pcs Pots and Pans Set Non Stick Kitchen Cookware Sets Induction Cookware Nonstick Granite Cooking Set with Frying Pans, Saucepans, Steamer Silicone Shovel Spoon & Tongs (Black) : Everything Else
+2024-03-29 18:22:03,317 - INFO - Current_price 109.0
+2024-03-29 18:22:03,318 - INFO - Updated last_checked
+2024-03-29 18:22:03,318 - INFO - Updated status
+
+2024-03-29 18:22:04,937 - INFO - Apple iPhone 14 Pro Max 1TB ( Unlocked) US E Sim - Excellent | eBay
+2024-03-29 18:22:05,010 - INFO - Current_price 939.99
+2024-03-29 18:22:05,010 - INFO - Updated last_checked
+2024-03-29 18:22:05,010 - INFO - Updated status
+
+2024-03-29 18:22:07,346 - INFO - Amazon.com: MSI Cubi N ADL Mini PC, Intel N100 Processor (Beats Intel i3-10100), 32GB RAM, 1TB SSD, Wi-Fi 5, Support 4K UHD Dual Display, HDMI, Gigabit Ethernet for Home/Office/Gaming, Windows 11 Pro, Black : Electronics
+2024-03-29 18:22:07,367 - INFO - Current_price 369.0
+2024-03-29 18:22:07,367 - INFO - Updated last_checked
+2024-03-29 18:22:07,367 - INFO - Updated status
+
+2024-03-29 18:22:07,547 - INFO - Browser closed
+2024-03-29 18:22:07,549 - INFO - CSV file has been updated with current prices.
