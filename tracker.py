@@ -36,7 +36,6 @@ def send_email(subject, body):
     with smtplib.SMTP_SSL('smtp.gmail.com', 465, context=context) as smtp:
         smtp.login(email_sender, email_password)
         smtp.sendmail(email_sender, email_receiver, em.as_string())
-        logging.info(f'Email sent to {email_receiver}')
 
 
 def update_product_prices(csv_file):
