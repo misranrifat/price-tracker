@@ -42,7 +42,7 @@ def send_email(subject, body):
 def update_price_for_product(row, options):
     with webdriver.Chrome(options=options) as browser:
         logging.info(f"Launching {browser.capabilities['browserName']} browser for product {row['url']}")
-        browser.maximize_window()
+
         try:
             browser.get(row['url'])
             logging.info(browser.title)
@@ -78,6 +78,7 @@ def update_product_prices(csv_file):
     # options.add_argument("--headless")
     # options.add_argument("--no-sandbox")
     # options.add_argument("--disable-dev-shm-usage")
+    options.add_argument('--start-maximized')
 
     with ThreadPoolExecutor(max_workers=5) as executor:
         futures = [executor.submit(update_price_for_product, row, options) for _, row in df.iterrows()]
