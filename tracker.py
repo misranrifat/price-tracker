@@ -3,6 +3,7 @@ import logging
 import os
 import smtplib
 import ssl
+from concurrent.futures import ThreadPoolExecutor
 from email.message import EmailMessage
 
 import pandas as pd
@@ -38,6 +39,32 @@ def send_email(subject, body):
         smtp.sendmail(email_sender, email_receiver, em.as_string())
 
 
+def update_price_for_product(row, options):
+    with webdriver.Chrome(options=options) as browser:
+        logging.info(f"Launching {browser.capabilities['browserName']} browser for product {row['url']}")
+
+        try:
+            browser.get(row['url'])
+            logging.info(browser.title)
+            current_price_element = WebDriverWait(browser, 5).until(EC.visibility_of_element_located((By.XPATH, row['xpath'])))
+            current_price = float(current_price_element.text.replace('$', '').replace(',', '').strip())
+            logging.info(f'Current price {current_price}')
+            updated_info = {
+                'last_checked': datetime.datetime.now().strftime('%Y-%m-%d %I:%M:%S %p'),
+                'status': 'ok',
+                'current_price': current_price
+            }
+            if current_price != row['price']:
+                subject = f"Price Change Detected for Product"
+                body = f"The price for the product at {row['url']} has changed from ${row['price']} to ${current_price}."
+                send_email(subject, body)
+                logging.info(f'Email sent')
+            return updated_info
+        except Exception as e:
+            logging.error(f"Error processing {row['url']}: {e}")
+            return {'last_checked': datetime.datetime.now().strftime('%Y-%m-%d %I:%M:%S %p'), 'status': 'error'}
+
+
 def update_product_prices(csv_file):
     df = pd.read_csv(csv_file)
 
@@ -46,52 +73,25 @@ def update_product_prices(csv_file):
 
     if 'status' not in df.columns:
         df['status'] = None
-        df['status'] = df['status'].astype('str')
 
     options = ChromeOptions()
-    options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.5615.49 Safari/537.36")
-    options.add_argument("--no-sandbox")
-    options.add_argument("--headless")
-    options.add_argument("--disable-dev-shm-usage")
-    options.add_argument('window-size=2560x1440')
-    browser = webdriver.Chrome(options=options)
-    logging.info(f"Launching {browser.capabilities['browserName']} browser")
-    logging.info(f"Browser version: {browser.capabilities.get('browserVersion') or browser.capabilities.get('version')}\n")
+    # options.add_argument("--headless")
+    # options.add_argument("--no-sandbox")
+    # options.add_argument("--disable-dev-shm-usage")
+    options.add_argument('--start-maximized')
 
-    for index, row in df.iterrows():
-        try:
-            browser.get(row['url'])
-            logging.info(browser.title)
-            current_price_element = WebDriverWait(browser, 35).until(EC.visibility_of_element_located((By.XPATH, row['xpath'])))
-            current_price = float(current_price_element.text.replace('$', '').replace(',', '').replace('US', '').strip())
-            logging.info(f'Current_price {current_price}')
-
-            df.at[index, 'last_checked'] = datetime.datetime.now().strftime('%Y-%m-%d %I:%M:%S %p')
-            logging.info('Updated last_checked')
-            df.at[index, 'status'] = 'ok'
-            logging.info('Updated status\n')
-
-            if current_price != row['price']:
-                subject = f"Price Change Detected for Product"
-                body = f"The price for the product at {row['url']} has changed from ${row['price']} to ${current_price}."
-                send_email(subject, body)
-                logging.info(f'Email sent')
-
-                logging.info(f"Updating price for {row['url']}: was {row['price']}, now {current_price}")
-                df.at[index, 'price'] = current_price
-                logging.info('Updated price\n')
-        except Exception as e:
-            logging.error(f"Error processing {row['url']}: {e}")
-            df.at[index, 'last_checked'] = datetime.datetime.now().strftime('%Y-%m-%d %I:%M:%S %p')
-            logging.error('Updated last_checked')
-            df.at[index, 'status'] = 'error'
-            logging.error('Updated status\n')
-
-    browser.quit()
-    logging.info('Browser closed')
+    with ThreadPoolExecutor(max_workers=5) as executor:
+        futures = [executor.submit(update_price_for_product, row, options) for _, row in df.iterrows()]
+        for future, (index, _) in zip(futures, df.iterrows()):
+            result = future.result()
+            df.at[index, 'last_checked'] = result['last_checked']
+            df.at[index, 'status'] = result['status']
+            if 'current_price' in result and result['status'] == 'ok':
+                df.at[index, 'price'] = result['current_price']
 
     df.to_csv(csv_file, index=False)
     logging.info("CSV file has been updated with current prices.")
 
 
-update_product_prices('products.csv')
+if __name__ == "__main__":
+    update_product_prices('products.csv')
