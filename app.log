@@ -1,34 +1,19 @@
-2024-03-30 05:00:05,801 - INFO - Launching chrome-headless-shell browser
-2024-03-30 05:00:05,802 - INFO - Browser version: 123.0.6312.87
+2024-03-30 06:00:05,553 - INFO - Launching chrome-headless-shell browser
+2024-03-30 06:00:05,554 - INFO - Browser version: 123.0.6312.87
 
-2024-03-30 05:00:06,204 - INFO - Amazon.com
-2024-03-30 05:00:41,579 - ERROR - Error processing https://www.amazon.com/SanDisk-2TB-Extreme-Portable-SDSSDE61-2T00-G25/dp/B08HN37XC1/ref=pd_ci_mcx_mh_mcx_views_0?pd_rd_w=8XSIK&content-id=amzn1.sym.225b4624-972d-4629-9040-f1bf9923dd95%3Aamzn1.symc.40e6a10e-cbc4-4fa5-81e3-4435ff64d03b&pf_rd_p=225b4624-972d-4629-9040-f1bf9923dd95&pf_rd_r=A2E91CEKYBA5YR4RS2MN&pd_rd_wg=RX7jS&pd_rd_r=02ec48a2-e941-4f74-b3b4-126b6e94fa91&pd_rd_i=B08HN37XC1: Message: 
-Stacktrace:
-0   chromedriver                        0x000000010498041c chromedriver + 4326428
-1   chromedriver                        0x00000001049788e4 chromedriver + 4294884
-2   chromedriver                        0x00000001045a4088 chromedriver + 278664
-3   chromedriver                        0x00000001045e6a80 chromedriver + 551552
-4   chromedriver                        0x000000010461f4f8 chromedriver + 783608
-5   chromedriver                        0x00000001045db4e4 chromedriver + 505060
-6   chromedriver                        0x00000001045dbf5c chromedriver + 507740
-7   chromedriver                        0x00000001049439b8 chromedriver + 4078008
-8   chromedriver                        0x0000000104948770 chromedriver + 4097904
-9   chromedriver                        0x000000010492a55c chromedriver + 3974492
-10  chromedriver                        0x0000000104949088 chromedriver + 4100232
-11  chromedriver                        0x000000010491bb4c chromedriver + 3914572
-12  chromedriver                        0x0000000104969690 chromedriver + 4232848
-13  chromedriver                        0x000000010496980c chromedriver + 4233228
-14  chromedriver                        0x0000000104978558 chromedriver + 4293976
-15  libsystem_pthread.dylib             0x000000019198ef94 _pthread_start + 136
-16  libsystem_pthread.dylib             0x0000000191989d34 thread_start + 8
+2024-03-30 06:00:09,836 - INFO - Amazon.com: SanDisk 2TB Extreme Portable SSD - Up to 1050MB/s, USB-C, USB 3.2 Gen 2, IP65 Water and Dust Resistance, Updated Firmware - External Solid State Drive - SDSSDE61-2T00-G25 : Electronics
+2024-03-30 06:00:09,857 - INFO - Current_price 157.0
+2024-03-30 06:00:09,858 - INFO - Updated last_checked
+2024-03-30 06:00:09,858 - INFO - Updated status
 
-2024-03-30 05:00:41,580 - ERROR - Updated last_checked
-2024-03-30 05:00:41,580 - ERROR - Updated status
+2024-03-30 06:00:11,460 - INFO - Email sent
+2024-03-30 06:00:11,460 - INFO - Updating price for https://www.amazon.com/SanDisk-2TB-Extreme-Portable-SDSSDE61-2T00-G25/dp/B08HN37XC1/ref=pd_ci_mcx_mh_mcx_views_0?pd_rd_w=8XSIK&content-id=amzn1.sym.225b4624-972d-4629-9040-f1bf9923dd95%3Aamzn1.symc.40e6a10e-cbc4-4fa5-81e3-4435ff64d03b&pf_rd_p=225b4624-972d-4629-9040-f1bf9923dd95&pf_rd_r=A2E91CEKYBA5YR4RS2MN&pd_rd_wg=RX7jS&pd_rd_r=02ec48a2-e941-4f74-b3b4-126b6e94fa91&pd_rd_i=B08HN37XC1: was 159, now 157.0
+2024-03-30 06:00:11,461 - INFO - Updated price
 
-2024-03-30 05:00:44,311 - INFO - Amazon.com: MSI Cubi N ADL Mini PC, Intel N100 Processor (Beats Intel i3-10100), 32GB RAM, 1TB SSD, Wi-Fi 5, Support 4K UHD Dual Display, HDMI, Gigabit Ethernet for Home/Office/Gaming, Windows 11 Pro, Black : Electronics
-2024-03-30 05:00:44,329 - INFO - Current_price 369.0
-2024-03-30 05:00:44,330 - INFO - Updated last_checked
-2024-03-30 05:00:44,330 - INFO - Updated status
+2024-03-30 06:00:14,043 - INFO - Amazon.com: MSI Cubi N ADL Mini PC, Intel N100 Processor (Beats Intel i3-10100), 32GB RAM, 1TB SSD, Wi-Fi 5, Support 4K UHD Dual Display, HDMI, Gigabit Ethernet for Home/Office/Gaming, Windows 11 Pro, Black : Electronics
+2024-03-30 06:00:14,059 - INFO - Current_price 369.0
+2024-03-30 06:00:14,059 - INFO - Updated last_checked
+2024-03-30 06:00:14,059 - INFO - Updated status
 
-2024-03-30 05:00:44,591 - INFO - Browser closed
-2024-03-30 05:00:44,593 - INFO - CSV file has been updated with current prices.
+2024-03-30 06:00:14,174 - INFO - Browser closed
+2024-03-30 06:00:14,175 - INFO - CSV file has been updated with current prices.
