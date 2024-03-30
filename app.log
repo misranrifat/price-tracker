@@ -1,78 +1,78 @@
-2024-03-29 20:05:06,191 - INFO - Launching chrome-headless-shell browser
-2024-03-29 20:05:06,195 - INFO - Browser version: 123.0.6312.87
+2024-03-29 20:10:05,867 - INFO - Launching chrome-headless-shell browser
+2024-03-29 20:10:05,869 - INFO - Browser version: 123.0.6312.87
 
-2024-03-29 20:05:07,296 - INFO - RIDGID 12 Gallon 5.0 Peak HP NXT Wet/Dry Shop Vacuum with Filter, Locking Hose and Accessories HD1200 - The Home Depot
-2024-03-29 20:05:07,834 - INFO - Current_price 79.0
-2024-03-29 20:05:07,834 - INFO - Updated last_checked
-2024-03-29 20:05:07,834 - INFO - Updated status
+2024-03-29 20:10:06,914 - INFO - RIDGID 12 Gallon 5.0 Peak HP NXT Wet/Dry Shop Vacuum with Filter, Locking Hose and Accessories HD1200 - The Home Depot
+2024-03-29 20:10:07,498 - INFO - Current_price 79.0
+2024-03-29 20:10:07,498 - INFO - Updated last_checked
+2024-03-29 20:10:07,498 - INFO - Updated status
 
-2024-03-29 20:05:08,835 - INFO - Husky 47 in. L Wood Handle Carbon Steel Digging Shovel with Grip 77416-945 - The Home Depot
-2024-03-29 20:05:09,369 - INFO - Current_price 19.0
-2024-03-29 20:05:09,369 - INFO - Updated last_checked
-2024-03-29 20:05:09,369 - INFO - Updated status
+2024-03-29 20:10:08,110 - INFO - Husky 47 in. L Wood Handle Carbon Steel Digging Shovel with Grip 77416-945 - The Home Depot
+2024-03-29 20:10:08,653 - INFO - Current_price 19.0
+2024-03-29 20:10:08,653 - INFO - Updated last_checked
+2024-03-29 20:10:08,653 - INFO - Updated status
 
-2024-03-29 20:05:09,592 - INFO - Amazon.com
-2024-03-29 20:05:45,092 - ERROR - Error processing https://www.amazon.com/SanDisk-2TB-Extreme-Portable-SDSSDE61-2T00-G25/dp/B08HN37XC1/ref=pd_ci_mcx_mh_mcx_views_0?pd_rd_w=8XSIK&content-id=amzn1.sym.225b4624-972d-4629-9040-f1bf9923dd95%3Aamzn1.symc.40e6a10e-cbc4-4fa5-81e3-4435ff64d03b&pf_rd_p=225b4624-972d-4629-9040-f1bf9923dd95&pf_rd_r=A2E91CEKYBA5YR4RS2MN&pd_rd_wg=RX7jS&pd_rd_r=02ec48a2-e941-4f74-b3b4-126b6e94fa91&pd_rd_i=B08HN37XC1: Message: 
+2024-03-29 20:10:09,468 - INFO - Amazon.com
+2024-03-29 20:10:44,999 - ERROR - Error processing https://www.amazon.com/SanDisk-2TB-Extreme-Portable-SDSSDE61-2T00-G25/dp/B08HN37XC1/ref=pd_ci_mcx_mh_mcx_views_0?pd_rd_w=8XSIK&content-id=amzn1.sym.225b4624-972d-4629-9040-f1bf9923dd95%3Aamzn1.symc.40e6a10e-cbc4-4fa5-81e3-4435ff64d03b&pf_rd_p=225b4624-972d-4629-9040-f1bf9923dd95&pf_rd_r=A2E91CEKYBA5YR4RS2MN&pd_rd_wg=RX7jS&pd_rd_r=02ec48a2-e941-4f74-b3b4-126b6e94fa91&pd_rd_i=B08HN37XC1: Message: 
 Stacktrace:
-0   chromedriver                        0x0000000104b2c41c chromedriver + 4326428
-1   chromedriver                        0x0000000104b248e4 chromedriver + 4294884
-2   chromedriver                        0x0000000104750088 chromedriver + 278664
-3   chromedriver                        0x0000000104792a80 chromedriver + 551552
-4   chromedriver                        0x00000001047cb4f8 chromedriver + 783608
-5   chromedriver                        0x00000001047874e4 chromedriver + 505060
-6   chromedriver                        0x0000000104787f5c chromedriver + 507740
-7   chromedriver                        0x0000000104aef9b8 chromedriver + 4078008
-8   chromedriver                        0x0000000104af4770 chromedriver + 4097904
-9   chromedriver                        0x0000000104ad655c chromedriver + 3974492
-10  chromedriver                        0x0000000104af5088 chromedriver + 4100232
-11  chromedriver                        0x0000000104ac7b4c chromedriver + 3914572
-12  chromedriver                        0x0000000104b15690 chromedriver + 4232848
-13  chromedriver                        0x0000000104b1580c chromedriver + 4233228
-14  chromedriver                        0x0000000104b24558 chromedriver + 4293976
+0   chromedriver                        0x0000000102c6441c chromedriver + 4326428
+1   chromedriver                        0x0000000102c5c8e4 chromedriver + 4294884
+2   chromedriver                        0x0000000102888088 chromedriver + 278664
+3   chromedriver                        0x00000001028caa80 chromedriver + 551552
+4   chromedriver                        0x00000001029034f8 chromedriver + 783608
+5   chromedriver                        0x00000001028bf4e4 chromedriver + 505060
+6   chromedriver                        0x00000001028bff5c chromedriver + 507740
+7   chromedriver                        0x0000000102c279b8 chromedriver + 4078008
+8   chromedriver                        0x0000000102c2c770 chromedriver + 4097904
+9   chromedriver                        0x0000000102c0e55c chromedriver + 3974492
+10  chromedriver                        0x0000000102c2d088 chromedriver + 4100232
+11  chromedriver                        0x0000000102bffb4c chromedriver + 3914572
+12  chromedriver                        0x0000000102c4d690 chromedriver + 4232848
+13  chromedriver                        0x0000000102c4d80c chromedriver + 4233228
+14  chromedriver                        0x0000000102c5c558 chromedriver + 4293976
 15  libsystem_pthread.dylib             0x000000019198ef94 _pthread_start + 136
 16  libsystem_pthread.dylib             0x0000000191989d34 thread_start + 8
 
-2024-03-29 20:05:45,092 - ERROR - Updated last_checked
-2024-03-29 20:05:45,092 - ERROR - Updated status
+2024-03-29 20:10:44,999 - ERROR - Updated last_checked
+2024-03-29 20:10:44,999 - ERROR - Updated status
 
-2024-03-29 20:05:47,427 - INFO - Amazon.com: Apple 2023 Mac Mini Desktop Computer M2 chip with 8‑core CPU and 10‑core GPU, 8GB Unified Memory, 256GB SSD Storage, Gigabit Ethernet. Works with iPhone/iPad : Electronics
-2024-03-29 20:06:22,760 - ERROR - Error processing https://www.amazon.com/gp/aw/d/B0BSHGHGXR/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=d8051ce6eb1bced7ec517ba7291722d2&hsa_cr_id=4867932200401&qid=1711541912&sr=1-1-9e67e56a-6f64-441f-a281-df67fc737124&ref_=sbx_be_s_sparkle_lsi4d_asin_0_img&pd_rd_w=pasrw&content-id=amzn1.sym.417820b0-80f2-4084-adb3-fb612550f30b%3Aamzn1.sym.417820b0-80f2-4084-adb3-fb612550f30b&pf_rd_p=417820b0-80f2-4084-adb3-fb612550f30b&pf_rd_r=ZAP6G2YRQ6R8Q8M3WH21&pd_rd_wg=V9MvD&pd_rd_r=4cdf0799-c3c5-42f0-b61a-325e2899441c: Message: 
+2024-03-29 20:10:47,470 - INFO - Amazon.com: Apple 2023 Mac Mini Desktop Computer M2 chip with 8‑core CPU and 10‑core GPU, 8GB Unified Memory, 256GB SSD Storage, Gigabit Ethernet. Works with iPhone/iPad : Electronics
+2024-03-29 20:11:22,783 - ERROR - Error processing https://www.amazon.com/gp/aw/d/B0BSHGHGXR/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=d8051ce6eb1bced7ec517ba7291722d2&hsa_cr_id=4867932200401&qid=1711541912&sr=1-1-9e67e56a-6f64-441f-a281-df67fc737124&ref_=sbx_be_s_sparkle_lsi4d_asin_0_img&pd_rd_w=pasrw&content-id=amzn1.sym.417820b0-80f2-4084-adb3-fb612550f30b%3Aamzn1.sym.417820b0-80f2-4084-adb3-fb612550f30b&pf_rd_p=417820b0-80f2-4084-adb3-fb612550f30b&pf_rd_r=ZAP6G2YRQ6R8Q8M3WH21&pd_rd_wg=V9MvD&pd_rd_r=4cdf0799-c3c5-42f0-b61a-325e2899441c: Message: 
 Stacktrace:
-0   chromedriver                        0x0000000104b2c41c chromedriver + 4326428
-1   chromedriver                        0x0000000104b248e4 chromedriver + 4294884
-2   chromedriver                        0x0000000104750088 chromedriver + 278664
-3   chromedriver                        0x0000000104792a80 chromedriver + 551552
-4   chromedriver                        0x00000001047cb4f8 chromedriver + 783608
-5   chromedriver                        0x00000001047874e4 chromedriver + 505060
-6   chromedriver                        0x0000000104787f5c chromedriver + 507740
-7   chromedriver                        0x0000000104aef9b8 chromedriver + 4078008
-8   chromedriver                        0x0000000104af4770 chromedriver + 4097904
-9   chromedriver                        0x0000000104ad655c chromedriver + 3974492
-10  chromedriver                        0x0000000104af5088 chromedriver + 4100232
-11  chromedriver                        0x0000000104ac7b4c chromedriver + 3914572
-12  chromedriver                        0x0000000104b15690 chromedriver + 4232848
-13  chromedriver                        0x0000000104b1580c chromedriver + 4233228
-14  chromedriver                        0x0000000104b24558 chromedriver + 4293976
+0   chromedriver                        0x0000000102c6441c chromedriver + 4326428
+1   chromedriver                        0x0000000102c5c8e4 chromedriver + 4294884
+2   chromedriver                        0x0000000102888088 chromedriver + 278664
+3   chromedriver                        0x00000001028caa80 chromedriver + 551552
+4   chromedriver                        0x00000001029034f8 chromedriver + 783608
+5   chromedriver                        0x00000001028bf4e4 chromedriver + 505060
+6   chromedriver                        0x00000001028bff5c chromedriver + 507740
+7   chromedriver                        0x0000000102c279b8 chromedriver + 4078008
+8   chromedriver                        0x0000000102c2c770 chromedriver + 4097904
+9   chromedriver                        0x0000000102c0e55c chromedriver + 3974492
+10  chromedriver                        0x0000000102c2d088 chromedriver + 4100232
+11  chromedriver                        0x0000000102bffb4c chromedriver + 3914572
+12  chromedriver                        0x0000000102c4d690 chromedriver + 4232848
+13  chromedriver                        0x0000000102c4d80c chromedriver + 4233228
+14  chromedriver                        0x0000000102c5c558 chromedriver + 4293976
 15  libsystem_pthread.dylib             0x000000019198ef94 _pthread_start + 136
 16  libsystem_pthread.dylib             0x0000000191989d34 thread_start + 8
 
-2024-03-29 20:06:22,761 - ERROR - Updated last_checked
-2024-03-29 20:06:22,761 - ERROR - Updated status
+2024-03-29 20:11:22,784 - ERROR - Updated last_checked
+2024-03-29 20:11:22,784 - ERROR - Updated status
 
-2024-03-29 20:06:26,111 - INFO - Amazon.com: 12pcs Pots and Pans Set Non Stick Kitchen Cookware Sets Induction Cookware Nonstick Granite Cooking Set with Frying Pans, Saucepans, Steamer Silicone Shovel Spoon & Tongs (Black) : Everything Else
-2024-03-29 20:06:26,145 - INFO - Current_price 109.0
-2024-03-29 20:06:26,145 - INFO - Updated last_checked
-2024-03-29 20:06:26,145 - INFO - Updated status
+2024-03-29 20:11:26,120 - INFO - Amazon.com: 12pcs Pots and Pans Set Non Stick Kitchen Cookware Sets Induction Cookware Nonstick Granite Cooking Set with Frying Pans, Saucepans, Steamer Silicone Shovel Spoon & Tongs (Black) : Everything Else
+2024-03-29 20:11:26,141 - INFO - Current_price 109.0
+2024-03-29 20:11:26,141 - INFO - Updated last_checked
+2024-03-29 20:11:26,141 - INFO - Updated status
 
-2024-03-29 20:06:27,666 - INFO - Apple iPhone 14 Pro Max 1TB ( Unlocked) US E Sim - Excellent | eBay
-2024-03-29 20:06:27,694 - INFO - Current_price 939.99
-2024-03-29 20:06:27,694 - INFO - Updated last_checked
-2024-03-29 20:06:27,694 - INFO - Updated status
+2024-03-29 20:11:27,842 - INFO - Apple iPhone 14 Pro Max 1TB ( Unlocked) US E Sim - Excellent | eBay
+2024-03-29 20:11:27,882 - INFO - Current_price 939.99
+2024-03-29 20:11:27,883 - INFO - Updated last_checked
+2024-03-29 20:11:27,883 - INFO - Updated status
 
-2024-03-29 20:06:30,328 - INFO - Amazon.com: MSI Cubi N ADL Mini PC, Intel N100 Processor (Beats Intel i3-10100), 32GB RAM, 1TB SSD, Wi-Fi 5, Support 4K UHD Dual Display, HDMI, Gigabit Ethernet for Home/Office/Gaming, Windows 11 Pro, Black : Electronics
-2024-03-29 20:06:30,350 - INFO - Current_price 369.0
-2024-03-29 20:06:30,351 - INFO - Updated last_checked
-2024-03-29 20:06:30,351 - INFO - Updated status
+2024-03-29 20:11:30,839 - INFO - Amazon.com: MSI Cubi N ADL Mini PC, Intel N100 Processor (Beats Intel i3-10100), 32GB RAM, 1TB SSD, Wi-Fi 5, Support 4K UHD Dual Display, HDMI, Gigabit Ethernet for Home/Office/Gaming, Windows 11 Pro, Black : Electronics
+2024-03-29 20:11:30,903 - INFO - Current_price 369.0
+2024-03-29 20:11:30,903 - INFO - Updated last_checked
+2024-03-29 20:11:30,903 - INFO - Updated status
 
-2024-03-29 20:06:31,013 - INFO - Browser closed
-2024-03-29 20:06:31,014 - INFO - CSV file has been updated with current prices.
+2024-03-29 20:11:31,099 - INFO - Browser closed
+2024-03-29 20:11:31,101 - INFO - CSV file has been updated with current prices.
