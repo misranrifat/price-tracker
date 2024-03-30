@@ -15,7 +15,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 log_file_path = os.path.join(os.path.dirname(__file__), 'app.log')
 with open(log_file_path, 'w') as file:
     pass
-logging.basicConfig(filename=log_file_path, filemode='a', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename=log_file_path, filemode='a', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
 
 
 def send_email(subject, body):
@@ -66,7 +66,7 @@ def update_product_prices(csv_file):
             current_price = float(current_price_element.text.replace('$', '').replace(',', '').replace('US', '').strip())
             logging.info(f'Current_price {current_price}')
 
-            df.at[index, 'last_checked'] = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            df.at[index, 'last_checked'] = datetime.datetime.now().strftime('%Y-%m-%d %I:%M:%S %p')
             logging.info('Updated last_checked')
             df.at[index, 'status'] = 'ok'
             logging.info('Updated status\n')
@@ -82,7 +82,7 @@ def update_product_prices(csv_file):
                 logging.info('Updated price\n')
         except Exception as e:
             logging.error(f"Error processing {row['url']}: {e}")
-            df.at[index, 'last_checked'] = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            df.at[index, 'last_checked'] = datetime.datetime.now().strftime('%Y-%m-%d %I:%M:%S %p')
             logging.error('Updated last_checked')
             df.at[index, 'status'] = 'error'
             logging.error('Updated status\n')
