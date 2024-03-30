@@ -1,34 +1,34 @@
-2024-03-30 08:00:05,861 - INFO - Launching chrome-headless-shell browser
-2024-03-30 08:00:05,861 - INFO - Browser version: 123.0.6312.87
+2024-03-30 09:00:05,806 - INFO - Launching chrome-headless-shell browser
+2024-03-30 09:00:05,806 - INFO - Browser version: 123.0.6312.87
 
-2024-03-30 08:00:06,502 - INFO - Amazon.com
-2024-03-30 08:00:42,133 - ERROR - Error processing https://www.amazon.com/SanDisk-2TB-Extreme-Portable-SDSSDE61-2T00-G25/dp/B08HN37XC1/ref=pd_ci_mcx_mh_mcx_views_0?pd_rd_w=8XSIK&content-id=amzn1.sym.225b4624-972d-4629-9040-f1bf9923dd95%3Aamzn1.symc.40e6a10e-cbc4-4fa5-81e3-4435ff64d03b&pf_rd_p=225b4624-972d-4629-9040-f1bf9923dd95&pf_rd_r=A2E91CEKYBA5YR4RS2MN&pd_rd_wg=RX7jS&pd_rd_r=02ec48a2-e941-4f74-b3b4-126b6e94fa91&pd_rd_i=B08HN37XC1: Message: 
+2024-03-30 09:00:07,180 - INFO - Amazon.com
+2024-03-30 09:00:42,309 - ERROR - Error processing https://www.amazon.com/SanDisk-2TB-Extreme-Portable-SDSSDE61-2T00-G25/dp/B08HN37XC1/ref=pd_ci_mcx_mh_mcx_views_0?pd_rd_w=8XSIK&content-id=amzn1.sym.225b4624-972d-4629-9040-f1bf9923dd95%3Aamzn1.symc.40e6a10e-cbc4-4fa5-81e3-4435ff64d03b&pf_rd_p=225b4624-972d-4629-9040-f1bf9923dd95&pf_rd_r=A2E91CEKYBA5YR4RS2MN&pd_rd_wg=RX7jS&pd_rd_r=02ec48a2-e941-4f74-b3b4-126b6e94fa91&pd_rd_i=B08HN37XC1: Message: 
 Stacktrace:
-0   chromedriver                        0x00000001024f841c chromedriver + 4326428
-1   chromedriver                        0x00000001024f08e4 chromedriver + 4294884
-2   chromedriver                        0x000000010211c088 chromedriver + 278664
-3   chromedriver                        0x000000010215ea80 chromedriver + 551552
-4   chromedriver                        0x00000001021974f8 chromedriver + 783608
-5   chromedriver                        0x00000001021534e4 chromedriver + 505060
-6   chromedriver                        0x0000000102153f5c chromedriver + 507740
-7   chromedriver                        0x00000001024bb9b8 chromedriver + 4078008
-8   chromedriver                        0x00000001024c0770 chromedriver + 4097904
-9   chromedriver                        0x00000001024a255c chromedriver + 3974492
-10  chromedriver                        0x00000001024c1088 chromedriver + 4100232
-11  chromedriver                        0x0000000102493b4c chromedriver + 3914572
-12  chromedriver                        0x00000001024e1690 chromedriver + 4232848
-13  chromedriver                        0x00000001024e180c chromedriver + 4233228
-14  chromedriver                        0x00000001024f0558 chromedriver + 4293976
+0   chromedriver                        0x0000000104f1c41c chromedriver + 4326428
+1   chromedriver                        0x0000000104f148e4 chromedriver + 4294884
+2   chromedriver                        0x0000000104b40088 chromedriver + 278664
+3   chromedriver                        0x0000000104b82a80 chromedriver + 551552
+4   chromedriver                        0x0000000104bbb4f8 chromedriver + 783608
+5   chromedriver                        0x0000000104b774e4 chromedriver + 505060
+6   chromedriver                        0x0000000104b77f5c chromedriver + 507740
+7   chromedriver                        0x0000000104edf9b8 chromedriver + 4078008
+8   chromedriver                        0x0000000104ee4770 chromedriver + 4097904
+9   chromedriver                        0x0000000104ec655c chromedriver + 3974492
+10  chromedriver                        0x0000000104ee5088 chromedriver + 4100232
+11  chromedriver                        0x0000000104eb7b4c chromedriver + 3914572
+12  chromedriver                        0x0000000104f05690 chromedriver + 4232848
+13  chromedriver                        0x0000000104f0580c chromedriver + 4233228
+14  chromedriver                        0x0000000104f14558 chromedriver + 4293976
 15  libsystem_pthread.dylib             0x000000019198ef94 _pthread_start + 136
 16  libsystem_pthread.dylib             0x0000000191989d34 thread_start + 8
 
-2024-03-30 08:00:42,134 - ERROR - Updated last_checked
-2024-03-30 08:00:42,134 - ERROR - Updated status
+2024-03-30 09:00:42,310 - ERROR - Updated last_checked
+2024-03-30 09:00:42,310 - ERROR - Updated status
 
-2024-03-30 08:00:45,178 - INFO - Amazon.com: MSI Cubi N ADL Mini PC, Intel N100 Processor (Beats Intel i3-10100), 32GB RAM, 1TB SSD, Wi-Fi 5, Support 4K UHD Dual Display, HDMI, Gigabit Ethernet for Home/Office/Gaming, Windows 11 Pro, Black : Electronics
-2024-03-30 08:00:45,197 - INFO - Current_price 369.0
-2024-03-30 08:00:45,199 - INFO - Updated last_checked
-2024-03-30 08:00:45,199 - INFO - Updated status
+2024-03-30 09:00:45,205 - INFO - Amazon.com: MSI Cubi N ADL Mini PC, Intel N100 Processor (Beats Intel i3-10100), 32GB RAM, 1TB SSD, Wi-Fi 5, Support 4K UHD Dual Display, HDMI, Gigabit Ethernet for Home/Office/Gaming, Windows 11 Pro, Black : Electronics
+2024-03-30 09:00:45,231 - INFO - Current_price 369.0
+2024-03-30 09:00:45,233 - INFO - Updated last_checked
+2024-03-30 09:00:45,233 - INFO - Updated status
 
-2024-03-30 08:00:45,333 - INFO - Browser closed
-2024-03-30 08:00:45,335 - INFO - CSV file has been updated with current prices.
+2024-03-30 09:00:45,493 - INFO - Browser closed
+2024-03-30 09:00:45,496 - INFO - CSV file has been updated with current prices.
