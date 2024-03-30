@@ -49,7 +49,10 @@ def update_product_prices(csv_file):
         df['status'] = df['status'].astype('str')
 
     options = ChromeOptions()
+    options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.5615.49 Safari/537.36")
+    options.add_argument("--no-sandbox")
     options.add_argument("--headless")
+    options.add_argument("--disable-dev-shm-usage")
     options.add_argument('window-size=2560x1440')
     browser = webdriver.Chrome(options=options)
     logging.info(f"Launching {browser.capabilities['browserName']} browser")
