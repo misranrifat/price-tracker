@@ -75,16 +75,19 @@ def update_product_prices(csv_file):
 
     options = ChromeOptions()
     options.add_argument('--start-maximized')
-    options.add_experimental_option("excludeSwitches", ["enable-automation"])
-    options.add_experimental_option('useAutomationExtension', False)
+    options.add_argument("--no-sandbox")  # Disables the sandbox for Chrome's renderer processes
+    options.add_argument('--disable-gpu')  # Disables GPU hardware acceleration
+
+    options.add_argument('window-size=2560x1440')
     options.add_argument("--disable-blink-features")
-    options.add_argument("--disable-blink-features=AutomationControlled")
-    options.add_argument("--verbose")
-    options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36")
+
+    # Automation Detection Mitigation
+    options.add_experimental_option("excludeSwitches", ["enable-automation"])  # Hides the automation toolbar notification
+    options.add_experimental_option('useAutomationExtension', False)  # Prevents the loading of the automation extension
+    options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36")  # Sets a custom user-agent
+
     # options.add_argument("--headless")
-    # options.add_argument("--no-sandbox")
-    # options.add_argument('--disable-gpu')
-    # options.add_argument('window-size=2560x1440')
+    options.add_argument("--verbose")
 
     with ThreadPoolExecutor(max_workers=10) as executor:
         futures = [executor.submit(update_price_for_product, row, options) for _, row in df.iterrows()]
