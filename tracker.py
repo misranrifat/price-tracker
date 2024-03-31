@@ -89,7 +89,7 @@ def update_product_prices(csv_file):
     # options.add_argument("--headless")
     options.add_argument("--verbose")
 
-    with ThreadPoolExecutor(max_workers=10) as executor:
+    with ThreadPoolExecutor(max_workers=5) as executor:
         futures = [executor.submit(update_price_for_product, row, options) for _, row in df.iterrows()]
         for future, (index, _) in zip(futures, df.iterrows()):
             result = future.result()
