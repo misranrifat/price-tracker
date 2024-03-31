@@ -45,10 +45,9 @@ def update_price_for_product(row, options):
 
         try:
             browser.get(row['url'])
-            logging.info(browser.title)
-            current_price_element = WebDriverWait(browser, 5).until(EC.visibility_of_element_located((By.XPATH, row['xpath'])))
+            current_price_element = WebDriverWait(browser, 15).until(EC.visibility_of_element_located((By.XPATH, row['xpath'])))
             current_price = float(current_price_element.text.replace('$', '').replace(',', '').strip())
-            logging.info(f'Current price {current_price}')
+            logging.info(f'Current price {current_price} - {browser.title}')
             updated_info = {
                 'last_checked': datetime.datetime.now().strftime('%Y-%m-%d %I:%M:%S %p'),
                 'status': 'ok',
@@ -75,12 +74,9 @@ def update_product_prices(csv_file):
         df['status'] = None
 
     options = ChromeOptions()
-    # options.add_argument("--headless")
-    # options.add_argument("--no-sandbox")
-    # options.add_argument("--disable-dev-shm-usage")
     options.add_argument('--start-maximized')
 
-    with ThreadPoolExecutor(max_workers=5) as executor:
+    with ThreadPoolExecutor(max_workers=10) as executor:
         futures = [executor.submit(update_price_for_product, row, options) for _, row in df.iterrows()]
         for future, (index, _) in zip(futures, df.iterrows()):
             result = future.result()
