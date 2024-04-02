@@ -54,7 +54,7 @@ def update_price_for_product(row, options):
                 'current_price': current_price
             }
             if current_price != row['price']:
-                subject = f"Price Change Detected for Product"
+                subject = f"Price Changed from ${row['price']} to ${current_price}"
                 body = f"The price for the product at {row['url']} has changed from ${row['price']} to ${current_price}."
                 send_email(subject, body)
                 logging.info(f'Email sent')
