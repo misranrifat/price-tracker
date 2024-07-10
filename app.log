@@ -1,24 +1,24 @@
-07/10/2024 12:01:01 AM - INFO - Launching chrome browser for product https://www.amazon.com/gp/product/B0CFG9VXK2/ref=ox_sc_saved_image_6?smid=A3QR4864ATM9Z9&psc=1
-07/10/2024 12:01:01 AM - INFO - Launching chrome browser for product https://www.amazon.com/ASUS-VG32VQ1B-Supports-Adaptive-sync-DisplayPort/dp/B088MKF848/ref=sr_1_1_sspa?crid=2MHCMNV0K2MWG&dib=eyJ2IjoiMSJ9.NyokXkabJBSZbAXaCG6-Bk0zRNX3db77kddh8-hi34pxzyjlr7LYcTGVIfMs0BZZRIv-jZ5WLQlAB_A_ZjQOahiwOnDPKCn4CSFAtf3Gn-xEfrd-0jmygaygi797onfXLsJrrPH8oYYGWQgoo0rkY7r-I45_cCuTbPMlWvrgGHVh-dS2LjQxmsrLYoPE1NYTr2E3ALAlLkn_0DNsa7Tb-Z79NxGQvk6x_ZRxT_CsOIU.TZ904-Wu8RTIvyMRJVJUU2xQqhhh6Pah6Q5ujxaYZkY&dib_tag=se&keywords=8k%2Bgaming%2Bmonitor%2B360hz&qid=1711850888&sprefix=8k%2Bgmain%2Caps%2C77&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1
-07/10/2024 12:01:06 AM - INFO - Current price 281.0 - Amazon.com: ASUS TUF Gaming 32" 1440P HDR Curved Monitor (VG32VQ1B) - QHD (2560 x 1440), 165Hz (Supports 144Hz), 1ms, Extreme Low Motion Blur, Speaker, FreeSync Premium, VESA Mountable, DisplayPort, HDMI,BLACK : Electronics
-07/10/2024 12:01:21 AM - ERROR - Error processing https://www.amazon.com/gp/product/B0CFG9VXK2/ref=ox_sc_saved_image_6?smid=A3QR4864ATM9Z9&psc=1: Message: 
+07/10/2024 12:01:01 PM - INFO - Launching chrome browser for product https://www.amazon.com/gp/product/B0CFG9VXK2/ref=ox_sc_saved_image_6?smid=A3QR4864ATM9Z9&psc=1
+07/10/2024 12:01:01 PM - INFO - Launching chrome browser for product https://www.amazon.com/ASUS-VG32VQ1B-Supports-Adaptive-sync-DisplayPort/dp/B088MKF848/ref=sr_1_1_sspa?crid=2MHCMNV0K2MWG&dib=eyJ2IjoiMSJ9.NyokXkabJBSZbAXaCG6-Bk0zRNX3db77kddh8-hi34pxzyjlr7LYcTGVIfMs0BZZRIv-jZ5WLQlAB_A_ZjQOahiwOnDPKCn4CSFAtf3Gn-xEfrd-0jmygaygi797onfXLsJrrPH8oYYGWQgoo0rkY7r-I45_cCuTbPMlWvrgGHVh-dS2LjQxmsrLYoPE1NYTr2E3ALAlLkn_0DNsa7Tb-Z79NxGQvk6x_ZRxT_CsOIU.TZ904-Wu8RTIvyMRJVJUU2xQqhhh6Pah6Q5ujxaYZkY&dib_tag=se&keywords=8k%2Bgaming%2Bmonitor%2B360hz&qid=1711850888&sprefix=8k%2Bgmain%2Caps%2C77&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1
+07/10/2024 12:01:07 PM - INFO - Current price 281.0 - Amazon.com: ASUS TUF Gaming 32" 1440P HDR Curved Monitor (VG32VQ1B) - QHD (2560 x 1440), 165Hz (Supports 144Hz), 1ms, Extreme Low Motion Blur, Speaker, FreeSync Premium, VESA Mountable, DisplayPort, HDMI,BLACK : Electronics
+07/10/2024 12:01:20 PM - ERROR - Error processing https://www.amazon.com/gp/product/B0CFG9VXK2/ref=ox_sc_saved_image_6?smid=A3QR4864ATM9Z9&psc=1: Message: 
 Stacktrace:
-0   chromedriver                        0x0000000102766a80 chromedriver + 4385408
-1   chromedriver                        0x000000010275f38c chromedriver + 4354956
-2   chromedriver                        0x000000010237cb0c chromedriver + 281356
-3   chromedriver                        0x00000001023bf2f8 chromedriver + 553720
-4   chromedriver                        0x00000001023f7d24 chromedriver + 785700
-5   chromedriver                        0x00000001023b3eec chromedriver + 507628
-6   chromedriver                        0x00000001023b48c4 chromedriver + 510148
-7   chromedriver                        0x000000010272e43c chromedriver + 4154428
-8   chromedriver                        0x0000000102732ea0 chromedriver + 4173472
-9   chromedriver                        0x0000000102713ff8 chromedriver + 4046840
-10  chromedriver                        0x000000010273378c chromedriver + 4175756
-11  chromedriver                        0x0000000102706fb8 chromedriver + 3993528
-12  chromedriver                        0x000000010275121c chromedriver + 4297244
-13  chromedriver                        0x0000000102751398 chromedriver + 4297624
-14  chromedriver                        0x000000010275ef84 chromedriver + 4353924
+0   chromedriver                        0x00000001012bea80 chromedriver + 4385408
+1   chromedriver                        0x00000001012b738c chromedriver + 4354956
+2   chromedriver                        0x0000000100ed4b0c chromedriver + 281356
+3   chromedriver                        0x0000000100f172f8 chromedriver + 553720
+4   chromedriver                        0x0000000100f4fd24 chromedriver + 785700
+5   chromedriver                        0x0000000100f0beec chromedriver + 507628
+6   chromedriver                        0x0000000100f0c8c4 chromedriver + 510148
+7   chromedriver                        0x000000010128643c chromedriver + 4154428
+8   chromedriver                        0x000000010128aea0 chromedriver + 4173472
+9   chromedriver                        0x000000010126bff8 chromedriver + 4046840
+10  chromedriver                        0x000000010128b78c chromedriver + 4175756
+11  chromedriver                        0x000000010125efb8 chromedriver + 3993528
+12  chromedriver                        0x00000001012a921c chromedriver + 4297244
+13  chromedriver                        0x00000001012a9398 chromedriver + 4297624
+14  chromedriver                        0x00000001012b6f84 chromedriver + 4353924
 15  libsystem_pthread.dylib             0x000000018fd72f94 _pthread_start + 136
 16  libsystem_pthread.dylib             0x000000018fd6dd34 thread_start + 8
 
-07/10/2024 12:01:21 AM - INFO - CSV file has been updated with current prices.
+07/10/2024 12:01:20 PM - INFO - CSV file has been updated with current prices.
