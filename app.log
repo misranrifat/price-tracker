@@ -1,43 +1,43 @@
-07/28/2024 12:00:07 AM - INFO - Launching chrome browser for product https://www.amazon.com/gp/product/B0CFG9VXK2/ref=ox_sc_saved_image_6?smid=A3QR4864ATM9Z9&psc=1
-07/28/2024 12:00:07 AM - INFO - Launching chrome browser for product https://www.amazon.com/ASUS-VG32VQ1B-Supports-Adaptive-sync-DisplayPort/dp/B088MKF848/ref=sr_1_1_sspa?crid=2MHCMNV0K2MWG&dib=eyJ2IjoiMSJ9.NyokXkabJBSZbAXaCG6-Bk0zRNX3db77kddh8-hi34pxzyjlr7LYcTGVIfMs0BZZRIv-jZ5WLQlAB_A_ZjQOahiwOnDPKCn4CSFAtf3Gn-xEfrd-0jmygaygi797onfXLsJrrPH8oYYGWQgoo0rkY7r-I45_cCuTbPMlWvrgGHVh-dS2LjQxmsrLYoPE1NYTr2E3ALAlLkn_0DNsa7Tb-Z79NxGQvk6x_ZRxT_CsOIU.TZ904-Wu8RTIvyMRJVJUU2xQqhhh6Pah6Q5ujxaYZkY&dib_tag=se&keywords=8k%2Bgaming%2Bmonitor%2B360hz&qid=1711850888&sprefix=8k%2Bgmain%2Caps%2C77&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1
-07/28/2024 12:00:25 AM - ERROR - Error processing https://www.amazon.com/gp/product/B0CFG9VXK2/ref=ox_sc_saved_image_6?smid=A3QR4864ATM9Z9&psc=1: Message: 
+07/28/2024 12:00:06 PM - INFO - Launching chrome browser for product https://www.amazon.com/gp/product/B0CFG9VXK2/ref=ox_sc_saved_image_6?smid=A3QR4864ATM9Z9&psc=1
+07/28/2024 12:00:06 PM - INFO - Launching chrome browser for product https://www.amazon.com/ASUS-VG32VQ1B-Supports-Adaptive-sync-DisplayPort/dp/B088MKF848/ref=sr_1_1_sspa?crid=2MHCMNV0K2MWG&dib=eyJ2IjoiMSJ9.NyokXkabJBSZbAXaCG6-Bk0zRNX3db77kddh8-hi34pxzyjlr7LYcTGVIfMs0BZZRIv-jZ5WLQlAB_A_ZjQOahiwOnDPKCn4CSFAtf3Gn-xEfrd-0jmygaygi797onfXLsJrrPH8oYYGWQgoo0rkY7r-I45_cCuTbPMlWvrgGHVh-dS2LjQxmsrLYoPE1NYTr2E3ALAlLkn_0DNsa7Tb-Z79NxGQvk6x_ZRxT_CsOIU.TZ904-Wu8RTIvyMRJVJUU2xQqhhh6Pah6Q5ujxaYZkY&dib_tag=se&keywords=8k%2Bgaming%2Bmonitor%2B360hz&qid=1711850888&sprefix=8k%2Bgmain%2Caps%2C77&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1
+07/28/2024 12:00:25 PM - ERROR - Error processing https://www.amazon.com/gp/product/B0CFG9VXK2/ref=ox_sc_saved_image_6?smid=A3QR4864ATM9Z9&psc=1: Message: 
 Stacktrace:
-0   chromedriver                        0x0000000100b1cee8 cxxbridge1$str$ptr + 1871728
-1   chromedriver                        0x0000000100b1554c cxxbridge1$str$ptr + 1840596
-2   chromedriver                        0x000000010072882c cxxbridge1$string$len + 88532
-3   chromedriver                        0x000000010076c838 cxxbridge1$string$len + 367072
-4   chromedriver                        0x00000001007a4490 cxxbridge1$string$len + 595512
-5   chromedriver                        0x0000000100761478 cxxbridge1$string$len + 321056
-6   chromedriver                        0x00000001007620e8 cxxbridge1$string$len + 324240
-7   chromedriver                        0x0000000100ae49fc cxxbridge1$str$ptr + 1641092
-8   chromedriver                        0x0000000100ae9308 cxxbridge1$str$ptr + 1659792
-9   chromedriver                        0x0000000100acab78 cxxbridge1$str$ptr + 1534976
-10  chromedriver                        0x0000000100ae9ab8 cxxbridge1$str$ptr + 1661760
-11  chromedriver                        0x0000000100abca50 cxxbridge1$str$ptr + 1477336
-12  chromedriver                        0x0000000100b06970 cxxbridge1$str$ptr + 1780216
-13  chromedriver                        0x0000000100b06aec cxxbridge1$str$ptr + 1780596
-14  chromedriver                        0x0000000100b15180 cxxbridge1$str$ptr + 1839624
+0   chromedriver                        0x0000000103284ee8 cxxbridge1$str$ptr + 1871728
+1   chromedriver                        0x000000010327d54c cxxbridge1$str$ptr + 1840596
+2   chromedriver                        0x0000000102e9082c cxxbridge1$string$len + 88532
+3   chromedriver                        0x0000000102ed4838 cxxbridge1$string$len + 367072
+4   chromedriver                        0x0000000102f0c490 cxxbridge1$string$len + 595512
+5   chromedriver                        0x0000000102ec9478 cxxbridge1$string$len + 321056
+6   chromedriver                        0x0000000102eca0e8 cxxbridge1$string$len + 324240
+7   chromedriver                        0x000000010324c9fc cxxbridge1$str$ptr + 1641092
+8   chromedriver                        0x0000000103251308 cxxbridge1$str$ptr + 1659792
+9   chromedriver                        0x0000000103232b78 cxxbridge1$str$ptr + 1534976
+10  chromedriver                        0x0000000103251ab8 cxxbridge1$str$ptr + 1661760
+11  chromedriver                        0x0000000103224a50 cxxbridge1$str$ptr + 1477336
+12  chromedriver                        0x000000010326e970 cxxbridge1$str$ptr + 1780216
+13  chromedriver                        0x000000010326eaec cxxbridge1$str$ptr + 1780596
+14  chromedriver                        0x000000010327d180 cxxbridge1$str$ptr + 1839624
 15  libsystem_pthread.dylib             0x00000001950fef94 _pthread_start + 136
 16  libsystem_pthread.dylib             0x00000001950f9d34 thread_start + 8
 
-07/28/2024 12:00:28 AM - ERROR - Error processing https://www.amazon.com/ASUS-VG32VQ1B-Supports-Adaptive-sync-DisplayPort/dp/B088MKF848/ref=sr_1_1_sspa?crid=2MHCMNV0K2MWG&dib=eyJ2IjoiMSJ9.NyokXkabJBSZbAXaCG6-Bk0zRNX3db77kddh8-hi34pxzyjlr7LYcTGVIfMs0BZZRIv-jZ5WLQlAB_A_ZjQOahiwOnDPKCn4CSFAtf3Gn-xEfrd-0jmygaygi797onfXLsJrrPH8oYYGWQgoo0rkY7r-I45_cCuTbPMlWvrgGHVh-dS2LjQxmsrLYoPE1NYTr2E3ALAlLkn_0DNsa7Tb-Z79NxGQvk6x_ZRxT_CsOIU.TZ904-Wu8RTIvyMRJVJUU2xQqhhh6Pah6Q5ujxaYZkY&dib_tag=se&keywords=8k%2Bgaming%2Bmonitor%2B360hz&qid=1711850888&sprefix=8k%2Bgmain%2Caps%2C77&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1: Message: 
+07/28/2024 12:00:26 PM - ERROR - Error processing https://www.amazon.com/ASUS-VG32VQ1B-Supports-Adaptive-sync-DisplayPort/dp/B088MKF848/ref=sr_1_1_sspa?crid=2MHCMNV0K2MWG&dib=eyJ2IjoiMSJ9.NyokXkabJBSZbAXaCG6-Bk0zRNX3db77kddh8-hi34pxzyjlr7LYcTGVIfMs0BZZRIv-jZ5WLQlAB_A_ZjQOahiwOnDPKCn4CSFAtf3Gn-xEfrd-0jmygaygi797onfXLsJrrPH8oYYGWQgoo0rkY7r-I45_cCuTbPMlWvrgGHVh-dS2LjQxmsrLYoPE1NYTr2E3ALAlLkn_0DNsa7Tb-Z79NxGQvk6x_ZRxT_CsOIU.TZ904-Wu8RTIvyMRJVJUU2xQqhhh6Pah6Q5ujxaYZkY&dib_tag=se&keywords=8k%2Bgaming%2Bmonitor%2B360hz&qid=1711850888&sprefix=8k%2Bgmain%2Caps%2C77&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1: Message: 
 Stacktrace:
-0   chromedriver                        0x0000000100c8cee8 cxxbridge1$str$ptr + 1871728
-1   chromedriver                        0x0000000100c8554c cxxbridge1$str$ptr + 1840596
-2   chromedriver                        0x000000010089882c cxxbridge1$string$len + 88532
-3   chromedriver                        0x00000001008dc838 cxxbridge1$string$len + 367072
-4   chromedriver                        0x0000000100914490 cxxbridge1$string$len + 595512
-5   chromedriver                        0x00000001008d1478 cxxbridge1$string$len + 321056
-6   chromedriver                        0x00000001008d20e8 cxxbridge1$string$len + 324240
-7   chromedriver                        0x0000000100c549fc cxxbridge1$str$ptr + 1641092
-8   chromedriver                        0x0000000100c59308 cxxbridge1$str$ptr + 1659792
-9   chromedriver                        0x0000000100c3ab78 cxxbridge1$str$ptr + 1534976
-10  chromedriver                        0x0000000100c59ab8 cxxbridge1$str$ptr + 1661760
-11  chromedriver                        0x0000000100c2ca50 cxxbridge1$str$ptr + 1477336
-12  chromedriver                        0x0000000100c76970 cxxbridge1$str$ptr + 1780216
-13  chromedriver                        0x0000000100c76aec cxxbridge1$str$ptr + 1780596
-14  chromedriver                        0x0000000100c85180 cxxbridge1$str$ptr + 1839624
+0   chromedriver                        0x000000010489cee8 cxxbridge1$str$ptr + 1871728
+1   chromedriver                        0x000000010489554c cxxbridge1$str$ptr + 1840596
+2   chromedriver                        0x00000001044a882c cxxbridge1$string$len + 88532
+3   chromedriver                        0x00000001044ec838 cxxbridge1$string$len + 367072
+4   chromedriver                        0x0000000104524490 cxxbridge1$string$len + 595512
+5   chromedriver                        0x00000001044e1478 cxxbridge1$string$len + 321056
+6   chromedriver                        0x00000001044e20e8 cxxbridge1$string$len + 324240
+7   chromedriver                        0x00000001048649fc cxxbridge1$str$ptr + 1641092
+8   chromedriver                        0x0000000104869308 cxxbridge1$str$ptr + 1659792
+9   chromedriver                        0x000000010484ab78 cxxbridge1$str$ptr + 1534976
+10  chromedriver                        0x0000000104869ab8 cxxbridge1$str$ptr + 1661760
+11  chromedriver                        0x000000010483ca50 cxxbridge1$str$ptr + 1477336
+12  chromedriver                        0x0000000104886970 cxxbridge1$str$ptr + 1780216
+13  chromedriver                        0x0000000104886aec cxxbridge1$str$ptr + 1780596
+14  chromedriver                        0x0000000104895180 cxxbridge1$str$ptr + 1839624
 15  libsystem_pthread.dylib             0x00000001950fef94 _pthread_start + 136
 16  libsystem_pthread.dylib             0x00000001950f9d34 thread_start + 8
 
-07/28/2024 12:00:29 AM - INFO - CSV file has been updated with current prices.
+07/28/2024 12:00:26 PM - INFO - CSV file has been updated with current prices.
