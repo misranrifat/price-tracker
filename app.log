@@ -1,43 +1,24 @@
-07/30/2024 12:00:07 AM - INFO - Launching chrome browser for product https://www.amazon.com/ASUS-VG32VQ1B-Supports-Adaptive-sync-DisplayPort/dp/B088MKF848/ref=sr_1_1_sspa?crid=2MHCMNV0K2MWG&dib=eyJ2IjoiMSJ9.NyokXkabJBSZbAXaCG6-Bk0zRNX3db77kddh8-hi34pxzyjlr7LYcTGVIfMs0BZZRIv-jZ5WLQlAB_A_ZjQOahiwOnDPKCn4CSFAtf3Gn-xEfrd-0jmygaygi797onfXLsJrrPH8oYYGWQgoo0rkY7r-I45_cCuTbPMlWvrgGHVh-dS2LjQxmsrLYoPE1NYTr2E3ALAlLkn_0DNsa7Tb-Z79NxGQvk6x_ZRxT_CsOIU.TZ904-Wu8RTIvyMRJVJUU2xQqhhh6Pah6Q5ujxaYZkY&dib_tag=se&keywords=8k%2Bgaming%2Bmonitor%2B360hz&qid=1711850888&sprefix=8k%2Bgmain%2Caps%2C77&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1
-07/30/2024 12:00:07 AM - INFO - Launching chrome browser for product https://www.amazon.com/gp/product/B0CFG9VXK2/ref=ox_sc_saved_image_6?smid=A3QR4864ATM9Z9&psc=1
-07/30/2024 12:00:26 AM - ERROR - Error processing https://www.amazon.com/gp/product/B0CFG9VXK2/ref=ox_sc_saved_image_6?smid=A3QR4864ATM9Z9&psc=1: Message: 
+07/30/2024 12:00:06 PM - INFO - Launching chrome browser for product https://www.amazon.com/gp/product/B0CFG9VXK2/ref=ox_sc_saved_image_6?smid=A3QR4864ATM9Z9&psc=1
+07/30/2024 12:00:06 PM - INFO - Launching chrome browser for product https://www.amazon.com/ASUS-VG32VQ1B-Supports-Adaptive-sync-DisplayPort/dp/B088MKF848/ref=sr_1_1_sspa?crid=2MHCMNV0K2MWG&dib=eyJ2IjoiMSJ9.NyokXkabJBSZbAXaCG6-Bk0zRNX3db77kddh8-hi34pxzyjlr7LYcTGVIfMs0BZZRIv-jZ5WLQlAB_A_ZjQOahiwOnDPKCn4CSFAtf3Gn-xEfrd-0jmygaygi797onfXLsJrrPH8oYYGWQgoo0rkY7r-I45_cCuTbPMlWvrgGHVh-dS2LjQxmsrLYoPE1NYTr2E3ALAlLkn_0DNsa7Tb-Z79NxGQvk6x_ZRxT_CsOIU.TZ904-Wu8RTIvyMRJVJUU2xQqhhh6Pah6Q5ujxaYZkY&dib_tag=se&keywords=8k%2Bgaming%2Bmonitor%2B360hz&qid=1711850888&sprefix=8k%2Bgmain%2Caps%2C77&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1
+07/30/2024 12:00:17 PM - INFO - Current price 199.0 - Amazon.com: ASUS TUF Gaming 32" 1440P HDR Curved Monitor (VG32VQ1B) - QHD (2560 x 1440), 165Hz (Supports 144Hz), 1ms, Extreme Low Motion Blur, Speaker, FreeSync Premium, VESA Mountable, DisplayPort, HDMI,BLACK : Electronics
+07/30/2024 12:00:25 PM - ERROR - Error processing https://www.amazon.com/gp/product/B0CFG9VXK2/ref=ox_sc_saved_image_6?smid=A3QR4864ATM9Z9&psc=1: Message: 
 Stacktrace:
-0   chromedriver                        0x0000000100b28ee8 cxxbridge1$str$ptr + 1871728
-1   chromedriver                        0x0000000100b2154c cxxbridge1$str$ptr + 1840596
-2   chromedriver                        0x000000010073482c cxxbridge1$string$len + 88532
-3   chromedriver                        0x0000000100778838 cxxbridge1$string$len + 367072
-4   chromedriver                        0x00000001007b0490 cxxbridge1$string$len + 595512
-5   chromedriver                        0x000000010076d478 cxxbridge1$string$len + 321056
-6   chromedriver                        0x000000010076e0e8 cxxbridge1$string$len + 324240
-7   chromedriver                        0x0000000100af09fc cxxbridge1$str$ptr + 1641092
-8   chromedriver                        0x0000000100af5308 cxxbridge1$str$ptr + 1659792
-9   chromedriver                        0x0000000100ad6b78 cxxbridge1$str$ptr + 1534976
-10  chromedriver                        0x0000000100af5ab8 cxxbridge1$str$ptr + 1661760
-11  chromedriver                        0x0000000100ac8a50 cxxbridge1$str$ptr + 1477336
-12  chromedriver                        0x0000000100b12970 cxxbridge1$str$ptr + 1780216
-13  chromedriver                        0x0000000100b12aec cxxbridge1$str$ptr + 1780596
-14  chromedriver                        0x0000000100b21180 cxxbridge1$str$ptr + 1839624
+0   chromedriver                        0x0000000105368ee8 cxxbridge1$str$ptr + 1871728
+1   chromedriver                        0x000000010536154c cxxbridge1$str$ptr + 1840596
+2   chromedriver                        0x0000000104f7482c cxxbridge1$string$len + 88532
+3   chromedriver                        0x0000000104fb8838 cxxbridge1$string$len + 367072
+4   chromedriver                        0x0000000104ff0490 cxxbridge1$string$len + 595512
+5   chromedriver                        0x0000000104fad478 cxxbridge1$string$len + 321056
+6   chromedriver                        0x0000000104fae0e8 cxxbridge1$string$len + 324240
+7   chromedriver                        0x00000001053309fc cxxbridge1$str$ptr + 1641092
+8   chromedriver                        0x0000000105335308 cxxbridge1$str$ptr + 1659792
+9   chromedriver                        0x0000000105316b78 cxxbridge1$str$ptr + 1534976
+10  chromedriver                        0x0000000105335ab8 cxxbridge1$str$ptr + 1661760
+11  chromedriver                        0x0000000105308a50 cxxbridge1$str$ptr + 1477336
+12  chromedriver                        0x0000000105352970 cxxbridge1$str$ptr + 1780216
+13  chromedriver                        0x0000000105352aec cxxbridge1$str$ptr + 1780596
+14  chromedriver                        0x0000000105361180 cxxbridge1$str$ptr + 1839624
 15  libsystem_pthread.dylib             0x00000001950fef94 _pthread_start + 136
 16  libsystem_pthread.dylib             0x00000001950f9d34 thread_start + 8
 
-07/30/2024 12:00:26 AM - ERROR - Error processing https://www.amazon.com/ASUS-VG32VQ1B-Supports-Adaptive-sync-DisplayPort/dp/B088MKF848/ref=sr_1_1_sspa?crid=2MHCMNV0K2MWG&dib=eyJ2IjoiMSJ9.NyokXkabJBSZbAXaCG6-Bk0zRNX3db77kddh8-hi34pxzyjlr7LYcTGVIfMs0BZZRIv-jZ5WLQlAB_A_ZjQOahiwOnDPKCn4CSFAtf3Gn-xEfrd-0jmygaygi797onfXLsJrrPH8oYYGWQgoo0rkY7r-I45_cCuTbPMlWvrgGHVh-dS2LjQxmsrLYoPE1NYTr2E3ALAlLkn_0DNsa7Tb-Z79NxGQvk6x_ZRxT_CsOIU.TZ904-Wu8RTIvyMRJVJUU2xQqhhh6Pah6Q5ujxaYZkY&dib_tag=se&keywords=8k%2Bgaming%2Bmonitor%2B360hz&qid=1711850888&sprefix=8k%2Bgmain%2Caps%2C77&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1: Message: 
-Stacktrace:
-0   chromedriver                        0x0000000104b3cee8 cxxbridge1$str$ptr + 1871728
-1   chromedriver                        0x0000000104b3554c cxxbridge1$str$ptr + 1840596
-2   chromedriver                        0x000000010474882c cxxbridge1$string$len + 88532
-3   chromedriver                        0x000000010478c838 cxxbridge1$string$len + 367072
-4   chromedriver                        0x00000001047c4490 cxxbridge1$string$len + 595512
-5   chromedriver                        0x0000000104781478 cxxbridge1$string$len + 321056
-6   chromedriver                        0x00000001047820e8 cxxbridge1$string$len + 324240
-7   chromedriver                        0x0000000104b049fc cxxbridge1$str$ptr + 1641092
-8   chromedriver                        0x0000000104b09308 cxxbridge1$str$ptr + 1659792
-9   chromedriver                        0x0000000104aeab78 cxxbridge1$str$ptr + 1534976
-10  chromedriver                        0x0000000104b09ab8 cxxbridge1$str$ptr + 1661760
-11  chromedriver                        0x0000000104adca50 cxxbridge1$str$ptr + 1477336
-12  chromedriver                        0x0000000104b26970 cxxbridge1$str$ptr + 1780216
-13  chromedriver                        0x0000000104b26aec cxxbridge1$str$ptr + 1780596
-14  chromedriver                        0x0000000104b35180 cxxbridge1$str$ptr + 1839624
-15  libsystem_pthread.dylib             0x00000001950fef94 _pthread_start + 136
-16  libsystem_pthread.dylib             0x00000001950f9d34 thread_start + 8
-
-07/30/2024 12:00:26 AM - INFO - CSV file has been updated with current prices.
+07/30/2024 12:00:26 PM - INFO - CSV file has been updated with current prices.
