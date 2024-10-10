@@ -1,24 +1,6 @@
-10/09/2024 07:00:06 PM - INFO - Launching chrome browser for product https://www.amazon.com/ASUS-VG32VQ1B-Supports-Adaptive-sync-DisplayPort/dp/B088MKF848/ref=sr_1_1_sspa?crid=2MHCMNV0K2MWG&dib=eyJ2IjoiMSJ9.NyokXkabJBSZbAXaCG6-Bk0zRNX3db77kddh8-hi34pxzyjlr7LYcTGVIfMs0BZZRIv-jZ5WLQlAB_A_ZjQOahiwOnDPKCn4CSFAtf3Gn-xEfrd-0jmygaygi797onfXLsJrrPH8oYYGWQgoo0rkY7r-I45_cCuTbPMlWvrgGHVh-dS2LjQxmsrLYoPE1NYTr2E3ALAlLkn_0DNsa7Tb-Z79NxGQvk6x_ZRxT_CsOIU.TZ904-Wu8RTIvyMRJVJUU2xQqhhh6Pah6Q5ujxaYZkY&dib_tag=se&keywords=8k%2Bgaming%2Bmonitor%2B360hz&qid=1711850888&sprefix=8k%2Bgmain%2Caps%2C77&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1
-10/09/2024 07:00:06 PM - INFO - Launching chrome browser for product https://www.amazon.com/gp/product/B0CFG9VXK2/ref=ox_sc_saved_image_6?smid=A3QR4864ATM9Z9&psc=1
-10/09/2024 07:00:14 PM - INFO - Current price 339.0 - Amazon.com: MSI Cubi B0A9 Mini Form Factor Business Desktop, Intel N200 Processor, 32GB RAM, 1TB SSD, Wi-Fi 5 and Bluetooth, Display Port, HDMI, RJ-45, USB 3.2 Gen 2, VESA Mount, Windows 11 Pro, Black : Electronics
-10/09/2024 07:00:30 PM - ERROR - Error processing https://www.amazon.com/ASUS-VG32VQ1B-Supports-Adaptive-sync-DisplayPort/dp/B088MKF848/ref=sr_1_1_sspa?crid=2MHCMNV0K2MWG&dib=eyJ2IjoiMSJ9.NyokXkabJBSZbAXaCG6-Bk0zRNX3db77kddh8-hi34pxzyjlr7LYcTGVIfMs0BZZRIv-jZ5WLQlAB_A_ZjQOahiwOnDPKCn4CSFAtf3Gn-xEfrd-0jmygaygi797onfXLsJrrPH8oYYGWQgoo0rkY7r-I45_cCuTbPMlWvrgGHVh-dS2LjQxmsrLYoPE1NYTr2E3ALAlLkn_0DNsa7Tb-Z79NxGQvk6x_ZRxT_CsOIU.TZ904-Wu8RTIvyMRJVJUU2xQqhhh6Pah6Q5ujxaYZkY&dib_tag=se&keywords=8k%2Bgaming%2Bmonitor%2B360hz&qid=1711850888&sprefix=8k%2Bgmain%2Caps%2C77&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1: Message: 
-Stacktrace:
-0   chromedriver                        0x0000000100fdc500 cxxbridge1$str$ptr + 1917112
-1   chromedriver                        0x0000000100fd4890 cxxbridge1$str$ptr + 1885256
-2   chromedriver                        0x0000000100be4538 cxxbridge1$string$len + 89424
-3   chromedriver                        0x0000000100c28878 cxxbridge1$string$len + 368784
-4   chromedriver                        0x0000000100c62b7c cxxbridge1$string$len + 607124
-5   chromedriver                        0x0000000100c1d374 cxxbridge1$string$len + 322444
-6   chromedriver                        0x0000000100c1dfc4 cxxbridge1$string$len + 325596
-7   chromedriver                        0x0000000100fa3d2c cxxbridge1$str$ptr + 1685732
-8   chromedriver                        0x0000000100fa8530 cxxbridge1$str$ptr + 1704168
-9   chromedriver                        0x0000000100f88e08 cxxbridge1$str$ptr + 1575360
-10  chromedriver                        0x0000000100fa8e00 cxxbridge1$str$ptr + 1706424
-11  chromedriver                        0x0000000100f79f94 cxxbridge1$str$ptr + 1514316
-12  chromedriver                        0x0000000100fc562c cxxbridge1$str$ptr + 1823204
-13  chromedriver                        0x0000000100fc57ac cxxbridge1$str$ptr + 1823588
-14  chromedriver                        0x0000000100fd4530 cxxbridge1$str$ptr + 1884392
-15  libsystem_pthread.dylib             0x0000000193f16f94 _pthread_start + 136
-16  libsystem_pthread.dylib             0x0000000193f11d34 thread_start + 8
-
-10/09/2024 07:00:30 PM - INFO - CSV file has been updated with current prices.
+10/09/2024 08:00:06 PM - INFO - Launching chrome browser for product https://www.amazon.com/ASUS-VG32VQ1B-Supports-Adaptive-sync-DisplayPort/dp/B088MKF848/ref=sr_1_1_sspa?crid=2MHCMNV0K2MWG&dib=eyJ2IjoiMSJ9.NyokXkabJBSZbAXaCG6-Bk0zRNX3db77kddh8-hi34pxzyjlr7LYcTGVIfMs0BZZRIv-jZ5WLQlAB_A_ZjQOahiwOnDPKCn4CSFAtf3Gn-xEfrd-0jmygaygi797onfXLsJrrPH8oYYGWQgoo0rkY7r-I45_cCuTbPMlWvrgGHVh-dS2LjQxmsrLYoPE1NYTr2E3ALAlLkn_0DNsa7Tb-Z79NxGQvk6x_ZRxT_CsOIU.TZ904-Wu8RTIvyMRJVJUU2xQqhhh6Pah6Q5ujxaYZkY&dib_tag=se&keywords=8k%2Bgaming%2Bmonitor%2B360hz&qid=1711850888&sprefix=8k%2Bgmain%2Caps%2C77&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1
+10/09/2024 08:00:06 PM - INFO - Launching chrome browser for product https://www.amazon.com/gp/product/B0CFG9VXK2/ref=ox_sc_saved_image_6?smid=A3QR4864ATM9Z9&psc=1
+10/09/2024 08:00:10 PM - INFO - Current price 339.0 - Amazon.com: MSI Cubi B0A9 Mini Form Factor Business Desktop, Intel N200 Processor, 32GB RAM, 1TB SSD, Wi-Fi 5 and Bluetooth, Display Port, HDMI, RJ-45, USB 3.2 Gen 2, VESA Mount, Windows 11 Pro, Black : Electronics
+10/09/2024 08:00:10 PM - INFO - Current price 232.0 - Amazon.com: ASUS TUF Gaming 32" 1440P HDR Curved Monitor (VG32VQ1B) - QHD (2560 x 1440), 165Hz (Supports 144Hz), 1ms, Extreme Low Motion Blur, Speaker, FreeSync Premium, VESA Mountable, DisplayPort, HDMI,BLACK : Electronics
+10/09/2024 08:00:11 PM - INFO - Email sent
+10/09/2024 08:00:11 PM - INFO - CSV file has been updated with current prices.
