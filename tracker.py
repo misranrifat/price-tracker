@@ -37,6 +37,10 @@ def send_email(subject, body):
     email_password = os.getenv("email_password")
     email_receiver = os.getenv("email_receiver")
 
+    if not all([email_sender, email_password, email_receiver]):
+        logging.error("Missing email credentials. Skipping email notification.")
+        return
+
     em = EmailMessage()
     em["From"] = email_sender
     em["To"] = email_receiver
@@ -47,9 +51,17 @@ def send_email(subject, body):
     context.check_hostname = False
     context.verify_mode = ssl.CERT_NONE
 
-    with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as smtp:
-        smtp.login(email_sender, email_password)
-        smtp.sendmail(email_sender, email_receiver, em.as_string())
+    try:
+        with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as smtp:
+            smtp.login(email_sender, email_password)
+            smtp.sendmail(email_sender, email_receiver, em.as_string())
+            logging.info("Email sent successfully")
+    except smtplib.SMTPAuthenticationError:
+        logging.error("Failed to authenticate with email server. Check credentials.")
+    except smtplib.SMTPException as e:
+        logging.error(f"SMTP error occurred: {e.__class__.__name__}")
+    except Exception as e:
+        logging.error(f"Unexpected error while sending email: {e.__class__.__name__}")
 
 
 @retry(stop=stop_after_attempt(3), wait=wait_exponential(multiplier=1, min=4, max=10))
