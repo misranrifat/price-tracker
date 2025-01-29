@@ -1,2 +1,5 @@
 pandas==2.2.1
 selenium==4.18.1
+fake-useragent==1.4.0
+tenacity==8.2.3
+screeninfo==0.8.1
