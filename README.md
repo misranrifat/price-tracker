@@ -1,6 +1,6 @@
 # Product Price Tracker
 
-This Python script, `tracker.py`, automates the tracking of product prices on websites using Selenium with advanced anti-detection features. It uses pandas for data handling, smtplib for sending emails, with multi-threading for reduced execution time.
+This Python script, `tracker.py`, automates the tracking of product prices on websites using Selenium with anti-detection features. It uses pandas for data handling, smtplib for sending emails, with multi-threading for reducing execution time.
 
 ## Features
 
