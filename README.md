@@ -1,55 +1,96 @@
 # Product Price Tracker
 
-This Python script, `tracker.py`, automates the tracking of product prices on websites using Selenium and notifies the user via email when there's a change in price. It employs pandas for data handling, smtplib for sending emails, and Selenium for web scraping.
+This Python script, `tracker.py`, automates the tracking of product prices on websites using Selenium with advanced anti-detection features. It uses pandas for data handling, smtplib for sending emails, with multi-threading for reduced execution time.
 
 ## Features
 
-- Price tracking for specified products on websites
+- Automated price tracking with multi-threaded processing
+- Smart anti-detection mechanisms and browser fingerprint modification
+- Human-like browsing behavior simulation
 - Automated email notifications for price changes
-- Error handling and logging for easy debugging
+- Error tracking and reporting
+- Retry mechanism for failed price extractions
 
 ## Requirements
 
-To run this script, you'll need the following installed:
+To run this script, you'll need:
 
 - Python 3.x
-- Pandas
-- Selenium WebDriver
-- ChromeDriver (or any compatible driver for your browser)
+- Chrome browser
+- ChromeDriver compatible with your Chrome version
 
-Additionally, you will need to set up environment variables for `email_sender`, `email_password`, and `email_receiver` to enable email notifications.
+## Dependencies
+
+The following Python packages are required:
+```bash
+pandas==2.2.1
+selenium==4.18.1
+fake-useragent==1.4.0
+tenacity==8.2.3
+```
 
 ## Installation
 
-First, clone the repository to your local machine:
-
-```bash
-git clone https://github.com/marc-rifat/price-tracker.git
-```
-
-Then, navigate to the cloned directory and install the required Python packages:
-
+Install required packages:
 ```bash
 pip install -r requirements.txt
 ```
 
-## Setup
+## Configuration
 
-1. Ensure you have ChromeDriver installed and it's accessible in your system's PATH.
-2. Set up the environment variables for your email configurations:
-   - `email_sender`: The email address from which the notifications will be sent.
-   - `email_password`: The password for the sender's email account.
-   - `email_receiver`: The email address to receive the notifications.
+### Environment Variables
+Set up the following environment variables for email notifications:
+- `email_sender`: Sender's email address
+- `email_password`: Sender's email password
+- `email_receiver`: Recipient's email address
+
+### Input File Format
+Create a `products.csv` file with the following columns:
+- `url`: Product page URL
+- `xpath`: XPath to the price element
+- `price`: Current price
+- `last_checked`: (Optional) Timestamp of last check
+- `status`: (Optional) Status of last check
+
+## Features in Detail
+
+### Anti-Detection Measures
+- Random user agent generation
+- WebDriver flags modification
+- Browser fingerprint customization
+- Automated detection bypass
+- Proxy support (configurable)
+
+### Performance
+- Multi-threaded processing (10 concurrent threads)
+- Retry mechanism for failed requests
+- Detailed execution statistics
 
 ## Usage
 
-Run the script using Python from your terminal:
+1. Prepare your `products.csv` file with the required information.
 
+2. Run the script:
 ```bash
 python3 tracker.py
 ```
 
-The script expects a CSV file named `products.csv` in the same directory, containing the following columns:
-- `url`: The product page URL.
-- `xpath`: The XPath to the element that contains the product's price.
-- `price`: The last known price (this will be updated by the script).
+3. Monitor the `app.log` file for detailed execution information.
+
+## Output
+
+The script will:
+1. Update `products.csv` with the latest prices
+2. Generate detailed logs in `app.log`
+3. Send email notifications for:
+   - Price changes
+   - Error reports (if any errors occur)
+
+## Jenkins Integration
+
+The project includes a Jenkinsfile for automated execution in a CI/CD pipeline, which:
+- Sets up a Python virtual environment
+- Installs dependencies
+- Runs the tracker
+- Commits and pushes updates to the repository
+
