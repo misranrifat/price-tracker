@@ -17,7 +17,6 @@ To run this script, you'll need:
 
 - Python 3.x
 - Chrome browser
-- ChromeDriver compatible with your Chrome version
 
 ## Dependencies
 
