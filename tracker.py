@@ -237,7 +237,7 @@ def update_product_prices(csv_file):
     }
     options.add_experimental_option("prefs", prefs)
 
-    with ThreadPoolExecutor(max_workers=10, thread_name_prefix="Scraper") as executor:
+    with ThreadPoolExecutor(max_workers=10, thread_name_prefix="Thread") as executor:
         futures = [
             executor.submit(update_price_for_product, row, options)
             for _, row in df.iterrows()
