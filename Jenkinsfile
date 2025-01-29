@@ -64,7 +64,7 @@ pipeline {
                             git config user.name "\${GIT_AUTHOR_NAME}"
                             git add -f products.csv app.log
                             git diff --cached --quiet || git commit -m "Update products.csv and app.log [skip ci]"
-                            git push origin HEAD:dev
+                            git push origin HEAD:main
                         """
                     } catch (Exception e) {
                         error "Failed to push changes: ${e.getMessage()}"
