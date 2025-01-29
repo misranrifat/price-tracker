@@ -192,7 +192,7 @@ def update_price_for_product(row, options):
             }
 
 
-def update_product_prices(csv_file):
+def track_and_update_product_prices(csv_file):
     start_time = time.time()  # Start timing
     products_processed = 0  # Counter for processed products
 
@@ -296,4 +296,4 @@ def update_product_prices(csv_file):
 
 
 if __name__ == "__main__":
-    update_product_prices("products.csv")
+    track_and_update_product_prices("products.csv")
