@@ -1,9 +1,11 @@
-02/01/2025 03:37:17 PM - [Thread_0] - INFO - Launching headless Chrome for product https://www.amazon.com/gp/product/B0CFG9VXK2/ref=ox_sc_saved_image_6?smid=A3QR4864ATM9Z9&psc=1
-02/01/2025 03:38:15 PM - [Thread_0] - ERROR - Error processing https://www.amazon.com/gp/product/B0CFG9VXK2/ref=ox_sc_saved_image_6?smid=A3QR4864ATM9Z9&psc=1: RetryError[<Future at 0x121566ed0 state=finished raised TimeoutException>]
-02/01/2025 03:38:15 PM - [MainThread] - INFO - Progress: 1/1 products processed (100.0%) | Elapsed: 59.3s | Avg: 59.3s per product | Est. remaining: 0.0s
-02/01/2025 03:38:15 PM - [MainThread] - INFO - 
+02/01/2025 03:44:31 PM - [Thread_0] - INFO - Launching headless Chrome for product https://www.amazon.com/gp/product/B0CFG9VXK2/ref=ox_sc_saved_image_6?smid=A3QR4864ATM9Z9&psc=1
+02/01/2025 03:44:31 PM - [Thread_1] - INFO - Launching headless Chrome for product https://www.bestbuy.com/site/apple-macbook-pro-14-inch-apple-m4-chip-built-for-apple-intelligence-16gb-memory-512gb-ssd-space-black/6602741.p?skuId=6602741
+02/01/2025 03:44:43 PM - [Thread_0] - ERROR - Error processing https://www.amazon.com/gp/product/B0CFG9VXK2/ref=ox_sc_saved_image_6?smid=A3QR4864ATM9Z9&psc=1: RetryError[<Future at 0x117138230 state=finished raised InvalidSelectorException>]
+02/01/2025 03:45:35 PM - [Thread_1] - ERROR - Error processing https://www.bestbuy.com/site/apple-macbook-pro-14-inch-apple-m4-chip-built-for-apple-intelligence-16gb-memory-512gb-ssd-space-black/6602741.p?skuId=6602741: RetryError[<Future at 0x116ee3380 state=finished raised TimeoutException>]
+02/01/2025 03:45:35 PM - [MainThread] - INFO - Progress: 2/2 products processed (100.0%) | Elapsed: 65.1s | Avg: 32.5s per product | Est. remaining: 0.0s
+02/01/2025 03:45:35 PM - [MainThread] - INFO - 
 Execution completed:
-- Total time: 59.3 seconds
-- Average time per product: 59.3 seconds
-- Products processed: 1
-02/01/2025 03:38:15 PM - [MainThread] - INFO - No errors occurred during scraping.
+- Total time: 65.1 seconds
+- Average time per product: 32.5 seconds
+- Products processed: 2
+02/01/2025 03:45:35 PM - [MainThread] - INFO - No errors occurred during scraping.
