@@ -2,8 +2,8 @@ pipeline {
     agent any
     
     environment {
-        NPM_PATH = 'npm'
-        NODE_PATH = 'node'
+        HOMEBREW_NODE = '/opt/homebrew/bin/node'
+        HOMEBREW_NPM = '/opt/homebrew/bin/npm'
         GIT_AUTHOR_NAME = 'Jenkins Pipeline'
     }
     
@@ -26,18 +26,23 @@ pipeline {
             steps {
                 script {
                     try {
-                        // First verify Node.js and npm are available
+                        // Check if Homebrew Node.js exists, otherwise use global Node.js
                         sh '''
-                            node --version
-                            npm --version
+                            if [ -f "/opt/homebrew/bin/node" ]; then
+                                NODE_CMD="/opt/homebrew/bin/node"
+                                NPM_CMD="/opt/homebrew/bin/npm"
+                            else
+                                NODE_CMD="node"
+                                NPM_CMD="npm"
+                            fi
+                            
+                            $NODE_CMD --version
+                            $NPM_CMD --version
+                            $NPM_CMD install
                         '''
-                        
-                        sh """
-                            ${NPM_PATH} install
-                        """
                     } catch (Exception e) {
                         currentBuild.result = 'FAILURE'
-                        error "Failed to setup node environment: ${e.getMessage()}\nPlease ensure Node.js and npm are installed on the Jenkins agent."
+                        error "Failed to setup node environment: ${e.getMessage()}\nPlease ensure Node.js and npm are installed (via Homebrew or globally)"
                     }
                 }
             }
@@ -47,9 +52,15 @@ pipeline {
             steps {
                 script {
                     try {
-                        sh """
-                            ${NODE_PATH} price-tracker.js
-                        """
+                        sh '''
+                            if [ -f "/opt/homebrew/bin/node" ]; then
+                                NODE_CMD="/opt/homebrew/bin/node"
+                            else
+                                NODE_CMD="node"
+                            fi
+                            
+                            $NODE_CMD price-tracker.js
+                        '''
                     } catch (Exception e) {
                         currentBuild.result = 'FAILURE'
                         error "Failed to run price-tracker.js: ${e.getMessage()}"
