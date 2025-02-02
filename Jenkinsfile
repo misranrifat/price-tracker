@@ -2,41 +2,46 @@ pipeline {
     agent any
     
     environment {
-        PYTHON_PATH = '/Library/Frameworks/Python.framework/Versions/3.12/bin/python3'
-        VENV_DIR = 'virtual_env'
-        VENV_BIN = "${VENV_DIR}/bin"
-        GIT_AUTHOR_NAME = 'Jenkins Pipeline'
+        PATH = "/opt/homebrew/bin:$PATH"
+        NODE_CMD = "/opt/homebrew/bin/node"
+        NPM_CMD = "/opt/homebrew/bin/npm"
+        GIT_AUTHOR_NAME = "Jenkins Pipeline"
     }
-    
+
     options {
-        // Add timeout and keep only last 10 builds
         timeout(time: 1, unit: 'HOURS')
         buildDiscarder(logRotator(numToKeepStr: '10'))
     }
 
     stages {
+        stage('Debug Environment') {
+            steps {
+                script {
+                    sh '''
+                        echo "Current PATH: $PATH"
+                        echo "Node version: $($NODE_CMD --version)"
+                        echo "NPM version: $($NPM_CMD --version)"
+                        which node
+                        which npm
+                    '''
+                }
+            }
+        }
+
         stage('Clean Workspace') {
             steps {
-                // Clean workspace before starting
                 cleanWs()
                 checkout scm
             }
         }
 
-        stage('Setup Python Environment') {
+        stage('Setup Node Environment') {
             steps {
                 script {
-                    try {
-                        // Create and activate virtual environment
-                        sh """
-                            ${PYTHON_PATH} -m venv ${VENV_DIR}
-                            source ${VENV_BIN}/activate
-                            ${VENV_BIN}/pip3 install --upgrade pip
-                            ${VENV_BIN}/pip3 install -r requirements.txt
-                        """
-                    } catch (Exception e) {
-                        error "Failed to setup Python environment: ${e.getMessage()}"
-                    }
+                    sh '''
+                        export PATH="/opt/homebrew/bin:$PATH"
+                        $NPM_CMD install
+                    '''
                 }
             }
         }
@@ -44,14 +49,10 @@ pipeline {
         stage('Run Tracker') {
             steps {
                 script {
-                    try {
-                        sh """
-                            source ${VENV_BIN}/activate
-                            ${VENV_BIN}/python3.12 tracker.py
-                        """
-                    } catch (Exception e) {
-                        error "Failed to run tracker.py: ${e.getMessage()}"
-                    }
+                    sh '''
+                        export PATH="/opt/homebrew/bin:$PATH"
+                        $NODE_CMD price-tracker.js
+                    '''
                 }
             }
         }
@@ -59,16 +60,12 @@ pipeline {
         stage('Push Changes') {
             steps {
                 script {
-                    try {
-                        sh """
-                            git config user.name "\${GIT_AUTHOR_NAME}"
-                            git add -f products.csv app.log
-                            git diff --cached --quiet || git commit -m "Update products.csv and app.log [skip ci]"
-                            git push origin HEAD:main
-                        """
-                    } catch (Exception e) {
-                        error "Failed to push changes: ${e.getMessage()}"
-                    }
+                    sh '''
+                        git config user.name "${GIT_AUTHOR_NAME}"
+                        git add -f products.csv
+                        git diff --cached --quiet || git commit -m "Updated products.csv [skip ci]"
+                        git push origin HEAD:branch-puppeteer || (git pull origin puppeteer --rebase && git push origin HEAD:branch-puppeteer)
+                    '''
                 }
             }
         }
@@ -76,8 +73,8 @@ pipeline {
 
     post {
         always {
-            // Clean up virtual environment
-            sh "rm -rf ${VENV_DIR}"
+            sh "rm -rf node_modules"
+            cleanWs()
         }
         success {
             echo 'Pipeline completed successfully!'
