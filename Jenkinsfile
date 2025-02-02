@@ -2,9 +2,6 @@ pipeline {
     agent any
     
     environment {
-        PYTHON_PATH = '/Library/Frameworks/Python.framework/Versions/3.12/bin/python3'
-        VENV_DIR = 'virtual_env'
-        VENV_BIN = "${VENV_DIR}/bin"
         GIT_AUTHOR_NAME = 'Jenkins Pipeline'
     }
     
@@ -23,19 +20,16 @@ pipeline {
             }
         }
 
-        stage('Setup Python Environment') {
+        stage('Setup Node Environment') {
             steps {
                 script {
                     try {
-                        // Create and activate virtual environment
+
                         sh """
-                            ${PYTHON_PATH} -m venv ${VENV_DIR}
-                            source ${VENV_BIN}/activate
-                            ${VENV_BIN}/pip3 install --upgrade pip
-                            ${VENV_BIN}/pip3 install -r requirements.txt
+                            npm install
                         """
                     } catch (Exception e) {
-                        error "Failed to setup Python environment: ${e.getMessage()}"
+                        error "Failed to setup node modules: ${e.getMessage()}"
                     }
                 }
             }
@@ -46,8 +40,7 @@ pipeline {
                 script {
                     try {
                         sh """
-                            source ${VENV_BIN}/activate
-                            ${VENV_BIN}/python3.12 tracker.py
+                            node price-tracker.js
                         """
                     } catch (Exception e) {
                         error "Failed to run tracker.py: ${e.getMessage()}"
@@ -62,9 +55,9 @@ pipeline {
                     try {
                         sh """
                             git config user.name "\${GIT_AUTHOR_NAME}"
-                            git add -f products.csv app.log
-                            git diff --cached --quiet || git commit -m "Update products.csv and app.log [skip ci]"
-                            git push origin HEAD:main
+                            git add -f products.csv
+                            git diff --cached --quiet || git commit -m "Updated products.csv"
+                            git push origin HEAD:puppeteer
                         """
                     } catch (Exception e) {
                         error "Failed to push changes: ${e.getMessage()}"
@@ -77,7 +70,7 @@ pipeline {
     post {
         always {
             // Clean up virtual environment
-            sh "rm -rf ${VENV_DIR}"
+            sh "rm -rf node_modules"
         }
         success {
             echo 'Pipeline completed successfully!'
