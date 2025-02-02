@@ -2,6 +2,8 @@ pipeline {
     agent any
     
     environment {
+        NPM_PATH = '/opt/homebrew/bin/npm'
+        NODE_PATH = '/opt/homebrew/bin/node'
         GIT_AUTHOR_NAME = 'Jenkins Pipeline'
     }
     
@@ -26,7 +28,7 @@ pipeline {
                     try {
 
                         sh """
-                            npm install
+                            ${NPM_PATH} install
                         """
                     } catch (Exception e) {
                         error "Failed to setup node modules: ${e.getMessage()}"
@@ -40,7 +42,7 @@ pipeline {
                 script {
                     try {
                         sh """
-                            node price-tracker.js
+                            ${NODE_PATH} price-tracker.js
                         """
                     } catch (Exception e) {
                         error "Failed to run tracker.py: ${e.getMessage()}"
