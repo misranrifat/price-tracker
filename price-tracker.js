@@ -130,7 +130,8 @@ else {
                     const priceChanged = oldPrice !== newPrice ? 'yes' : 'no';
                     console.log(`Price update for ${product.url}: ${oldPrice} -> ${newPrice} (Changed: ${priceChanged})`);
                     resolve({
-                        ...product,
+                        url: product.url,
+                        xpath: product.xpath,
                         current_price: newPrice.toFixed(2),
                         last_updated: moment().format('YYYY-MM-DD HH:mm:ss'),
                         price_changed: priceChanged
@@ -138,8 +139,11 @@ else {
                 } else {
                     console.log(`Failed to get price for ${product.url}, keeping old values`);
                     resolve({
-                        ...product,
-                        last_updated: moment().format('YYYY-MM-DD HH:mm:ss')
+                        url: product.url,
+                        xpath: product.xpath,
+                        current_price: product.current_price,
+                        last_updated: moment().format('YYYY-MM-DD HH:mm:ss'),
+                        price_changed: product.price_changed || 'no'
                     });
                 }
             });
@@ -147,8 +151,11 @@ else {
             worker.on('error', (error) => {
                 console.error(`Worker error for ${product.url}: ${error.message}`);
                 resolve({
-                    ...product,
-                    last_updated: moment().format('YYYY-MM-DD HH:mm:ss')
+                    url: product.url,
+                    xpath: product.xpath,
+                    current_price: product.current_price,
+                    last_updated: moment().format('YYYY-MM-DD HH:mm:ss'),
+                    price_changed: product.price_changed || 'no'
                 });
             });
         });
