@@ -26,11 +26,11 @@ pipeline {
             steps {
                 script {
                     try {
-
                         sh """
                             ${NPM_PATH} install
                         """
                     } catch (Exception e) {
+                        currentBuild.result = 'FAILURE'
                         error "Failed to setup node modules: ${e.getMessage()}"
                     }
                 }
@@ -45,7 +45,8 @@ pipeline {
                             ${NODE_PATH} price-tracker.js
                         """
                     } catch (Exception e) {
-                        error "Failed to run tracker.py: ${e.getMessage()}"
+                        currentBuild.result = 'FAILURE'
+                        error "Failed to run price-tracker.js: ${e.getMessage()}"
                     }
                 }
             }
@@ -57,11 +58,13 @@ pipeline {
                     try {
                         sh """
                             git config user.name "\${GIT_AUTHOR_NAME}"
+                            git config user.email "\${GIT_AUTHOR_EMAIL}"
                             git add -f products.csv
-                            git diff --cached --quiet || git commit -m "Updated products.csv"
-                            git push origin HEAD:puppeteer
+                            git diff --cached --quiet || git commit -m "Updated products.csv [skip ci]"
+                            git push origin HEAD:puppeteer || (git pull origin puppeteer --rebase && git push origin HEAD:puppeteer)
                         """
                     } catch (Exception e) {
+                        currentBuild.result = 'FAILURE'
                         error "Failed to push changes: ${e.getMessage()}"
                     }
                 }
@@ -73,12 +76,15 @@ pipeline {
         always {
             // Clean up virtual environment
             sh "rm -rf node_modules"
+            cleanWs()
         }
         success {
             echo 'Pipeline completed successfully!'
         }
         failure {
             echo 'Pipeline failed! Check the logs for details.'
+            // You might want to add notification here
+            // emailext or slackSend depending on your setup
         }
     }
 }
