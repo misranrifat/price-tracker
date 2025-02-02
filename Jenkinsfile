@@ -64,7 +64,7 @@ pipeline {
                         git config user.name "${GIT_AUTHOR_NAME}"
                         git add -f products.csv
                         git diff --cached --quiet || git commit -m "Updated products.csv [skip ci]"
-                        git push origin HEAD:main || (git pull origin puppeteer --rebase && git push origin HEAD:main)
+                        git push origin HEAD:main
                     '''
                 }
             }
