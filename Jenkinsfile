@@ -1,36 +1,86 @@
 pipeline {
     agent any
+    
     environment {
-        PYTHON_PATH = '/Library/Frameworks/Python.framework/Versions/3.12/bin/python3'
-        VENV_DIR = 'virtual_env'
-        VENV_BIN = "${VENV_DIR}/bin"
+        PATH = "/opt/homebrew/bin:$PATH"
+        NODE_CMD = "/opt/homebrew/bin/node"
+        NPM_CMD = "/opt/homebrew/bin/npm"
+        GIT_AUTHOR_NAME = "Jenkins Pipeline"
     }
-    stages {
 
-        stage('Setup') {
+    options {
+        timeout(time: 1, unit: 'HOURS')
+        buildDiscarder(logRotator(numToKeepStr: '10'))
+    }
+
+    stages {
+        stage('Debug Environment') {
             steps {
                 script {
-                    sh "${PYTHON_PATH} -m venv ${VENV_DIR}"
-                    sh "source ${VENV_BIN}/activate && ${VENV_BIN}/python3.12 --version"
-                    sh "which ${VENV_BIN}/python3.12"
-                    sh "${VENV_BIN}/pip3 --version"
-                    sh "which ${VENV_BIN}/pip3"
-                    sh "${VENV_BIN}/pip3 install -r requirements.txt"
-                    sh "${VENV_BIN}/python3.12 tracker.py"
+                    sh '''
+                        echo "Current PATH: $PATH"
+                        echo "Node version: $($NODE_CMD --version)"
+                        echo "NPM version: $($NPM_CMD --version)"
+                        which node
+                        which npm
+                    '''
                 }
             }
         }
 
-        stage('Push to origin') {
+        stage('Clean Workspace') {
+            steps {
+                cleanWs()
+                checkout scm
+            }
+        }
+
+        stage('Setup Node Environment') {
             steps {
                 script {
-                    sh '''git add -f products.csv
-                          git add -f app.log
-                          git commit -m "Updating products.csv and app.log"
-                          git push origin HEAD:main
-                       '''
+                    sh '''
+                        export PATH="/opt/homebrew/bin:$PATH"
+                        $NPM_CMD install
+                    '''
                 }
             }
+        }
+
+        stage('Run Tracker') {
+            steps {
+                script {
+                    sh '''
+                        export PATH="/opt/homebrew/bin:$PATH"
+                        $NODE_CMD price-tracker.js
+                    '''
+                }
+            }
+        }
+
+        stage('Push Changes') {
+            steps {
+                script {
+                    sh '''
+                        git config user.name "${GIT_AUTHOR_NAME}"
+                        git add -f products.csv
+                        git diff --cached --quiet || git commit -m "Updated products.csv [skip ci]"
+                        git push origin HEAD:main
+                    '''
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            sh "rm -rf node_modules"
+            cleanWs()
+        }
+        success {
+            echo 'Pipeline completed successfully!'
+        }
+        failure {
+            echo 'Pipeline failed! Check the logs for details.'
         }
     }
 }

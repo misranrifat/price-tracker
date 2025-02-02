@@ -1,55 +1,37 @@
-# Product Price Tracker
+# Price Tracker
 
-This Python script, `tracker.py`, automates the tracking of product prices on websites using Selenium and notifies the user via email when there's a change in price. It employs pandas for data handling, smtplib for sending emails, and Selenium for web scraping.
+A Node.js application that tracks product prices using Puppeteer. The application supports multi-threaded price checking and maintains price history in a CSV file.
 
 ## Features
 
-- Price tracking for specified products on websites
-- Automated email notifications for price changes
-- Error handling and logging for easy debugging
+- Multi-threaded processing (8 concurrent checks by default)
+- Automated price checking with configurable batch sizes
+- Headless browser automation using Puppeteer
 
-## Requirements
+## Prerequisites
 
-To run this script, you'll need the following installed:
-
-- Python 3.x
-- Pandas
-- Selenium WebDriver
-- ChromeDriver (or any compatible driver for your browser)
-
-Additionally, you will need to set up environment variables for `email_sender`, `email_password`, and `email_receiver` to enable email notifications.
+- **Node.js** (v14 or higher)
+- **npm**
 
 ## Installation
 
-First, clone the repository to your local machine:
+Install dependencies:
 
-```bash
-git clone https://github.com/marc-rifat/price-tracker.git
+```sh
+npm install
 ```
-
-Then, navigate to the cloned directory and install the required Python packages:
-
-```bash
-pip install -r requirements.txt
-```
-
-## Setup
-
-1. Ensure you have ChromeDriver installed and it's accessible in your system's PATH.
-2. Set up the environment variables for your email configurations:
-   - `email_sender`: The email address from which the notifications will be sent.
-   - `email_password`: The password for the sender's email account.
-   - `email_receiver`: The email address to receive the notifications.
 
 ## Usage
 
-Run the script using Python from your terminal:
+Run the price tracker:
 
-```bash
-python3 tracker.py
+```sh
+node price-tracker.js
 ```
 
-The script expects a CSV file named `products.csv` in the same directory, containing the following columns:
-- `url`: The product page URL.
-- `xpath`: The XPath to the element that contains the product's price.
-- `price`: The last known price (this will be updated by the script).
+## Configuration
+
+The application reads product information from `products.csv`. Each row should contain:
+
+- **Product XPATH**
+- **Product URL**
