@@ -2,8 +2,8 @@ pipeline {
     agent any
     
     environment {
-        NPM_PATH = '/opt/homebrew/bin/npm'
-        NODE_PATH = '/opt/homebrew/bin/node'
+        NPM_PATH = 'npm'
+        NODE_PATH = 'node'
         GIT_AUTHOR_NAME = 'Jenkins Pipeline'
     }
     
@@ -26,12 +26,18 @@ pipeline {
             steps {
                 script {
                     try {
+                        // First verify Node.js and npm are available
+                        sh '''
+                            node --version
+                            npm --version
+                        '''
+                        
                         sh """
                             ${NPM_PATH} install
                         """
                     } catch (Exception e) {
                         currentBuild.result = 'FAILURE'
-                        error "Failed to setup node modules: ${e.getMessage()}"
+                        error "Failed to setup node environment: ${e.getMessage()}\nPlease ensure Node.js and npm are installed on the Jenkins agent."
                     }
                 }
             }
