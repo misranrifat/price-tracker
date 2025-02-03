@@ -1,0 +1,29 @@
+# Browser settings
+browser:
+  headless: false  # Set to false to see the browser in action
+  viewport:
+    width: 1920
+    height: 1080
+  timeout: 60000  # Navigation timeout in milliseconds
+
+# Scraping settings
+scraping:
+  num_threads: 8
+  max_retries: 3
+  delays:
+    retry: 5000      # Base retry delay in milliseconds
+    min: 2000        # Minimum delay between requests
+    max: 5000        # Maximum delay between requests
+    rate_limit: 60000  # Delay when rate limited
+
+# Proxy settings
+proxy:
+  enabled: false
+  list:
+    # Add your proxies here
+    # - http://username:password@proxy.example.com:8080
+
+# Files
+files:
+  input: products.csv
+  output: products.csv 

@@ -3,26 +3,28 @@ const csv = require('csv-parser');
 const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 const fs = require('fs');
 const moment = require('moment');
+const yaml = require('js-yaml');
 const { Worker, isMainThread, parentPort, workerData } = require('worker_threads');
 
-const inputFile = 'products.csv';
-const outputFile = 'products.csv';
-const NUM_THREADS = 8;
-const MAX_RETRIES = 3;
-const RETRY_DELAY = 5000;
-const MIN_DELAY = 2000;
-const MAX_DELAY = 5000;
-const RATE_LIMIT_DELAY = 60000;
+// Load configuration
+const config = yaml.load(fs.readFileSync('config.yaml', 'utf8'));
+
+const inputFile = config.files.input;
+const outputFile = config.files.output;
+const NUM_THREADS = config.scraping.num_threads;
+const MAX_RETRIES = config.scraping.max_retries;
+const RETRY_DELAY = config.scraping.delays.retry;
+const MIN_DELAY = config.scraping.delays.min;
+const MAX_DELAY = config.scraping.delays.max;
+const RATE_LIMIT_DELAY = config.scraping.delays.rate_limit;
 
 // Price alert thresholds
 const PRICE_DECREASE_ALERT_THRESHOLD = 0.1; // 10% decrease
 const PRICE_INCREASE_ALERT_THRESHOLD = 0.2; // 20% increase
 const ALERT_LOG_FILE = 'price_alerts.log';
 
-// Configure proxy list - add your proxies here
-const PROXY_LIST = [
-    // Example: 'http://username:password@proxy.example.com:8080'
-];
+// Configure proxy list
+const PROXY_LIST = config.proxy.enabled ? config.proxy.list : [];
 
 function getRandomProxy() {
     return PROXY_LIST.length > 0 ? PROXY_LIST[Math.floor(Math.random() * PROXY_LIST.length)] : null;
@@ -80,18 +82,22 @@ if (!isMainThread) {
             console.log(`[${url}] Launching browser... (Attempt ${retryCount + 1}/${MAX_RETRIES})`);
             const proxy = getRandomProxy();
             const launchOptions = {
-                headless: 'new',
-                defaultViewport: {
-                    width: 1920,
-                    height: 1080
-                },
+                headless: config.browser.headless ? 'new' : false,
+                defaultViewport: config.browser.headless ? config.browser.viewport : null,
                 args: [
                     '--disable-web-security',
                     '--disable-features=IsolateOrigins,site-per-process',
                     '--no-sandbox',
-                    '--disable-setuid-sandbox'
+                    '--disable-setuid-sandbox',
+                    '--disable-geolocation',
+                    '--use-fake-ui-for-media-stream',
+                    '--use-fake-device-for-media-stream'
                 ]
             };
+            
+            if (!config.browser.headless) {
+                launchOptions.args.push('--start-maximized');
+            }
             
             if (proxy) {
                 launchOptions.args.push(`--proxy-server=${proxy}`);
@@ -102,6 +108,16 @@ if (!isMainThread) {
             const pages = await browser.pages();
             const page = pages[0];
 
+            // Get and print window size
+            const dimensions = await page.evaluate(() => {
+                return {
+                    width: window.innerWidth,
+                    height: window.innerHeight,
+                    deviceScaleFactor: window.devicePixelRatio
+                };
+            });
+            console.log(`[${url}] Browser window size:`, dimensions);
+
             console.log(`[${url}] Setting up browser configurations...`);
             await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36');
             await page.setExtraHTTPHeaders({
@@ -110,12 +126,12 @@ if (!isMainThread) {
             });
 
             await page.setJavaScriptEnabled(true);
-            await page.setDefaultNavigationTimeout(60000);
+            await page.setDefaultNavigationTimeout(config.browser.timeout);
 
             console.log(`[${url}] Navigating to page...`);
             const response = await page.goto(url, {
                 waitUntil: 'networkidle0',
-                timeout: 60000
+                timeout: config.browser.timeout
             });
 
             // Check for rate limiting or blocking
