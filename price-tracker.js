@@ -4,16 +4,15 @@ const createCsvWriter = require('csv-writer').createObjectCsvWriter;
 const fs = require('fs');
 const moment = require('moment');
 const { Worker, isMainThread, parentPort, workerData } = require('worker_threads');
-const path = require('path');
 
 const inputFile = 'products.csv';
 const outputFile = 'products.csv';
 const NUM_THREADS = 8;
 const MAX_RETRIES = 3;
 const RETRY_DELAY = 5000;
-const MIN_DELAY = 2000;  // Minimum delay between requests
-const MAX_DELAY = 5000;  // Maximum delay between requests
-const RATE_LIMIT_DELAY = 60000;  // 1 minute delay if rate limited
+const MIN_DELAY = 2000;
+const MAX_DELAY = 5000;
+const RATE_LIMIT_DELAY = 60000;
 
 // Price alert thresholds
 const PRICE_DECREASE_ALERT_THRESHOLD = 0.1; // 10% decrease
