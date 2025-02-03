@@ -1,6 +1,6 @@
 # Browser settings
 browser:
-  headless: false  # Set to false to see the browser in action
+  headless: true  # Set to false to see the browser in action
   viewport:
     width: 1920
     height: 1080
