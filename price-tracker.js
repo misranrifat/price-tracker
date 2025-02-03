@@ -109,7 +109,8 @@ else {
             { id: 'xpath', title: 'xpath' },
             { id: 'current_price', title: 'current_price' },
             { id: 'last_updated', title: 'last_updated' },
-            { id: 'price_changed', title: 'price_changed' }
+            { id: 'price_changed', title: 'price_changed' },
+            { id: 'status', title: 'status' }
         ]
     });
 
@@ -134,7 +135,8 @@ else {
                         xpath: product.xpath,
                         current_price: newPrice.toFixed(2),
                         last_updated: moment().format('YYYY-MM-DD HH:mm:ss'),
-                        price_changed: priceChanged
+                        price_changed: priceChanged,
+                        status: 'ok'
                     });
                 } else {
                     console.log(`Failed to get price for ${product.url}, keeping old values`);
@@ -143,7 +145,8 @@ else {
                         xpath: product.xpath,
                         current_price: product.current_price,
                         last_updated: moment().format('YYYY-MM-DD HH:mm:ss'),
-                        price_changed: product.price_changed || 'no'
+                        price_changed: product.price_changed || 'no',
+                        status: 'fail'
                     });
                 }
             });
@@ -155,7 +158,8 @@ else {
                     xpath: product.xpath,
                     current_price: product.current_price,
                     last_updated: moment().format('YYYY-MM-DD HH:mm:ss'),
-                    price_changed: product.price_changed || 'no'
+                    price_changed: product.price_changed || 'no',
+                    status: 'fail'
                 });
             });
         });
