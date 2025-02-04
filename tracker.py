@@ -217,7 +217,7 @@ def track_and_update_product_prices(csv_file):
     # options.add_argument('--proxy-server=http://proxy-address:port')
 
     # Headless mode configuration
-    options.add_argument("--headless=new")  # New headless mode implementation
+    # options.add_argument("--headless=new")  # New headless mode implementation
     options.add_argument("--disable-gpu")
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
