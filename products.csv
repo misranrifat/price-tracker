@@ -1,3 +1,3 @@
 url,xpath,current_price,last_updated,price_changed,status
-https://www.bestbuy.com/site/sony-playstation-5-slim-console-white/6566039.p?skuId=6566039,/html/body/div[4]/main/div[6]/div/div/div/div/div/div/div[7]/div[1]/div/div[4]/div/div[2]/div/div/div/div/div[2]/div[1]/div/div/span[1],499.99,2025-02-24 01:18:18,no,ok
-https://www.bestbuy.com/site/microsoft-xbox-series-x-1tb-console-carbon-black/6428324.p?skuId=6428324,/html/body/div[4]/main/div[6]/div/div/div/div/div/div/div[7]/div[1]/div/div[4]/div/div[2]/div/div/div/div/div[2]/div[1]/div/div/span[1],499.99,2025-02-24 01:18:18,no,ok
+https://www.bestbuy.com/site/sony-playstation-5-slim-console-white/6566039.p?skuId=6566039,/html/body/div[4]/main/div[6]/div/div/div/div/div/div/div[7]/div[1]/div/div[4]/div/div[2]/div/div/div/div/div[2]/div[1]/div/div/span[1],499.99,2025-02-25 00:24:41,no,fail
+https://www.bestbuy.com/site/microsoft-xbox-series-x-1tb-console-carbon-black/6428324.p?skuId=6428324,/html/body/div[4]/main/div[6]/div/div/div/div/div/div/div[7]/div[1]/div/div[4]/div/div[2]/div/div/div/div/div[2]/div[1]/div/div/span[1],499.99,2025-02-25 00:23:08,no,ok
